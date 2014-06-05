@@ -16,6 +16,7 @@ header {
 }
 
 #container {
+  margin-top: 60px;
   width: 60%;
   margin-left: auto;
   Margin-right: auto;
