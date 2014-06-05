@@ -1,21 +1,15 @@
 /******SCSS Variables******/
 
 /*Colors*/
-$primary-color: #4A4A4A;
+$primary-color: blue;
 $background-color: #fff;
 $sel-color: #000;
 $sel-bg-color: red;
 
 /*Dimensions*/
-$pitch-pipe-margin: 20px;
+$pitch-pipe-margin: 80px;
 
 /*Responsive Sizes*/
-$phone: 480px;
-$tablet-portrait: 767px;
-$tablet-landscape-desktop: '(min-width: 768px) and (max-width: 979px)';
-$large-desktop: '(min-width: 1200px)';
-$non-retina: 'screen and (-webkit-max-device-pixel-ratio: 1)';
-$retina: 'screen and (-webkit-min-device-pixel-ratio: 2)';
 
 /******General******/
 
@@ -48,7 +42,7 @@ header {
   text-shadow: 10px 10px lighten($primary-color, 50%);
 }
 
-/*Pitch Pipe Styling*/
+/*Pitch Pipe SVG Styling*/
 #pitch-pipe {
   margin-top: $pitch-pipe-margin;
 }
@@ -99,5 +93,8 @@ header {
 
 .selector {
   position: relative;
-  margin-top: -300px;
+  margin-top: -668px;
+  margin-left: -70px;
+  width: 742px;
+  height: 742px;
 }

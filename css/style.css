@@ -12,7 +12,7 @@
 
 body {
   background-color: white;
-  color: #4a4a4a;
+  color: blue;
   margin: 0;
   height: 100%;
   width: 100%;
@@ -26,12 +26,12 @@ header {
   margin: 0px;
   padding: 0px;
   text-align: center;
-  text-shadow: 10px 10px #cacaca;
+  text-shadow: 10px 10px white;
 }
 
-/*Pitch Pipe Styling*/
+/*Pitch Pipe SVG Styling*/
 #pitch-pipe {
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 #container {
@@ -75,11 +75,14 @@ header {
   border-radius: 50%;
   width: 600px;
   height: 600px;
-  background-color: #4a4a4a;
+  background-color: blue;
   color: white;
 }
 
 .selector {
   position: relative;
-  margin-top: -300px;
+  margin-top: -668px;
+  margin-left: -70px;
+  width: 742px;
+  height: 742px;
 }
