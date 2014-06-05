@@ -1,8 +1,8 @@
 /******SCSS Variables******/
 
 /*Colors*/
-$primary-color: blue;
-$background-color: #fff;
+$primary-color: #33AD5C;
+$background-color: #dcdcdc;
 $sel-color: #000;
 $sel-bg-color: red;
 
@@ -25,6 +25,7 @@ $pitch-pipe-margin: 80px;
 
 body {
   background-color: $background-color;
+  background-image: url("pitch-pipe.png");
   color: $primary-color;
   margin: 0;
   height: 100%;
@@ -39,7 +40,7 @@ header {
   margin: 0px;
   padding: 0px;
   text-align: center;
-  text-shadow: 10px 10px lighten($primary-color, 50%);
+  text-shadow: 3px 3px lighten($primary-color, 30%);
 }
 
 /*Pitch Pipe SVG Styling*/

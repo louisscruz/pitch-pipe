@@ -11,8 +11,9 @@
 }
 
 body {
-  background-color: white;
-  color: blue;
+  background-color: gainsboro;
+  background-image: url("pitch-pipe.png");
+  color: #33ad5c;
   margin: 0;
   height: 100%;
   width: 100%;
@@ -26,7 +27,7 @@ header {
   margin: 0px;
   padding: 0px;
   text-align: center;
-  text-shadow: 10px 10px white;
+  text-shadow: 3px 3px #98e1b1;
 }
 
 /*Pitch Pipe SVG Styling*/
@@ -75,8 +76,8 @@ header {
   border-radius: 50%;
   width: 600px;
   height: 600px;
-  background-color: blue;
-  color: white;
+  background-color: #33ad5c;
+  color: gainsboro;
 }
 
 .selector {
