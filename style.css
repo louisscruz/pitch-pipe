@@ -6,6 +6,8 @@ body {
   font-size: 32px;
   color: #303030;
   text-align: center;
+  top: 0px;
+  left: 0px;
 }
 
 header {
