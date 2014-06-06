@@ -143,11 +143,10 @@ footer {
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
   header {
-    font-size: 14px;
     text-shadow: 1px 1px $primary-color;
   }
   #pitch-pipe {
-    margin-top: 25px;
+
     width: 150px;
     height: 150px;
   }
