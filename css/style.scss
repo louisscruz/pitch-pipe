@@ -48,16 +48,24 @@ header {
 }
 
 footer {
-  font:12px "Oleo Script", sans-serif;
-  width: 100%;
-  margin: 50%;
-  padding: 0px;
-  text-align: center;
+
 }
 
 /*******Pitch Pipe******/
 
-/*SVG*/
+/*Sizing Classes*/
+.container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #pitch-pipe {
   margin-top: $pitch-pipe-margin;
   width: 600px;
@@ -65,6 +73,8 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+
+/*SVG*/
 
 #circle {
   position: relative;
@@ -96,17 +106,21 @@ footer {
   height: 123.67%;
 }
 
-/*Classes*/
-.container {
-  width: 100%;
-  height: 100%;
+/*Output Display*/
+#output {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
-}
+  margin-top: -125%;
+  height: 50%;
+  width: 50%;
+  z-index: 1;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 150px;
+  font-weight: bold;
 
-.circle {
-  margin-left: auto;
-  margin-right: auto;
+  color: $background-color;
 }
 
 /******Responsive Sizes******/
@@ -117,6 +131,9 @@ footer {
     width: 300px;
     height: 300px;
   }
+  #output {
+    margin-top: -120%;
+  }
 }
 
 /* Smartphones (landscape) ----------- */
@@ -124,6 +141,9 @@ footer {
   #pitch-pipe {
     width: 600px;
     height: 600px;
+  }
+  #output {
+    margin-top: -120%;
   }
 }
 
@@ -133,6 +153,9 @@ footer {
   width: 200px;
   height: 200px;
   }
+  #output {
+    margin-top: -120%;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -140,6 +163,9 @@ footer {
   #pitch-pipe {
   width: 600px;
   height: 600px;
+  }
+  #output {
+    margin-top: -120%;
   }
 }
 
@@ -149,6 +175,9 @@ footer {
     width: 600px;
     height: 600px;
   }
+  #output {
+    margin-top: -120%;
+  }
 }
 
 /* iPads (portrait) ----------- */
@@ -156,6 +185,9 @@ footer {
   #pitch-pipe {
     width: 600px;
     height: 600px;
+  }
+  #output {
+    margin-top: -120%;
   }
 }
 /**********
@@ -166,12 +198,18 @@ iPad 3
     width: 400px;
     height: 400px;
   }
+  #output {
+    margin-top: -120%;
+  }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
   #pitch-pipe {
     width: 600px;
     height: 600px;
+  }
+  #output {
+    margin-top: -120%;
   }
 }
 /* Desktops and laptops ----------- */
@@ -180,6 +218,9 @@ iPad 3
     width: 600px;
     height: 600px;
   }
+  #output {
+    margin-top: -119%;
+  }
 }
 
 /* Large screens ----------- */
@@ -187,6 +228,9 @@ iPad 3
   #pitch-pipe {
     width: 800px;
     height: 800px;
+  }
+  #output {
+    margin-top: -100%;
   }
 }
 

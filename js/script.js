@@ -12,31 +12,48 @@ $(function($) {
             console.log("cancel : ", this);
         },
         format : function (value) {
+          knobValue = value;
           if(value==1) {
-            return 'C#'
+            $("#output").html("<h2>C<b>&#x266f;</b></h2>");
+            $("#output b")
+              .css( "font-size", "100px" );
           } else if(value==2) {
-            return 'D'
+            $("#output").html("<h2>D</h2>");
           } else if(value==3) {
-            return 'D#'
+            $("#output").html("<h2>D<b>&#x266f;</b></h2>");
+            $("#output b")
+              .css( "font-size", "100px" );
           } else if(value==4) {
-            return 'E'
+            $("#output").html("<h2>E</h2>");
           } else if(value==5) {
-            return 'F'
+            $("#output").html("<h2>F</h2>");
           } else if(value==6) {
-            return 'F#'
+            $("#output").html("<h2>F<b>&#x266f;</b></h2>");
+            $("#output b")
+              .css( "font-size", "100px" );
           } else if(value==7) {
-            return 'G'
+            $("#output").html("<h2>G</h2>");
           } else if(value==8) {
-            return 'G#'
+            $("#output").html("<h2>G<b>&#x266f;</b></h2>");
+            $("#output b")
+              .css( "font-size", "100px" );
           } else if(value==9) {
-            return 'A'
+            $("#output").html("<h2>A</h2>");
           } else if(value==10) {
-            return 'Bb'
+            $("#output").html("<h2>B<b>&#x266d;</b></h2>");
+            $("#output b")
+              .css( "font-size", "100px" );
           } else if(value==11) {
-            return 'B'
+            $("#output").html("<h2>B</h2>");
           } else {
-            return 'C'
+            $("#output").html("<h2>C</h2>");
           }
         },
     });
+
+    $("#play").click(function() {
+        $("#" + knobValue)[0].load();
+        $("#" + knobValue)[0].play();
+    })
+
 });
