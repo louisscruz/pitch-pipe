@@ -53,8 +53,8 @@ header {
 
 #pitch-pipe {
   margin-top: 80px;
-  width: 600px;
-  height: 600px;
+  width: 450px;
+  height: 450px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -121,12 +121,13 @@ header {
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
   #pitch-pipe {
-    width: 600px;
-    height: 600px;
+    width: 450px;
+    height: 450px;
   }
 
   #output {
-    margin-top: -115%;
+    margin-top: -117%;
+    font-size: 120px;
   }
 }
 /* Smartphones (portrait) ----------- */
@@ -178,12 +179,12 @@ iPad 3
 **********/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   #pitch-pipe {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
   }
 
   #output {
-    margin-top: -120%;
+    margin-top: -117%;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
@@ -194,10 +195,22 @@ iPad 3
 
   #output {
     margin-top: -120%;
+    font-size: 150px;
   }
 }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
+  #pitch-pipe {
+    width: 450px;
+    height: 450px;
+  }
+
+  #output {
+    margin-top: -117%;
+  }
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
   #pitch-pipe {
     width: 600px;
     height: 600px;
@@ -205,18 +218,7 @@ iPad 3
 
   #output {
     margin-top: -115%;
-  }
-}
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-  #pitch-pipe {
-    width: 700px;
-    height: 700px;
-  }
-
-  #output {
-    margin-top: -110%;
-    font-size: 164px;
+    font-size: 150px;
   }
 }
 /* iPhone 4 ----------- */
