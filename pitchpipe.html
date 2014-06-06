@@ -10,115 +10,7 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
         <script src="js/jquery.knob.js"></script>
-        <script>
-            $(function($) {
-
-                $(".knob").knob({
-                    change : function (value) {
-                        //console.log("change : " + value);
-                    },
-                    release : function (value) {
-                        //console.log(this.$.attr('value'));
-                        console.log("release : " + value);
-                    },
-                    cancel : function () {
-                        console.log("cancel : ", this);
-                    },
-                    format : function (value) {
-                        if(value==1) {
-                          return 'C#'
-                        } else if(value==2) {
-                          return 'D'
-                        } else if(value==3) {
-                          return 'D#'
-                        } else if(value==4) {
-                          return 'E'
-                        } else if(value==5) {
-                          return 'F'
-                        } else if(value==6) {
-                          return 'F#'
-                        } else if(value==7) {
-                          return 'G'
-                        } else if(value==8) {
-                          return 'G#'
-                        } else if(value==9) {
-                          return 'A'
-                        } else if(value==10) {
-                          return 'A#'
-                        } else if(value==11) {
-                          return 'B'
-                        } else {
-                          return 'C'
-                        }
-
-                    },
-                    draw : function () {
-
-                        // "tron" case
-                        if(this.$.data('skin') == 'tron') {
-
-                            this.cursorExt = 0.3;
-
-                            var a = this.arc(this.cv)  // Arc
-                                , pa                   // Previous arc
-                                , r = 1;
-
-                            this.g.lineWidth = this.lineWidth;
-
-                            if (this.o.displayPrevious) {
-                                pa = this.arc(this.v);
-                                this.g.beginPath();
-                                this.g.strokeStyle = this.pColor;
-                                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, pa.s, pa.e, pa.d);
-                                this.g.stroke();
-                            }
-
-                            this.g.beginPath();
-                            this.g.strokeStyle = r ? this.o.fgColor : this.fgColor ;
-                            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, a.s, a.e, a.d);
-                            this.g.stroke();
-
-                            this.g.lineWidth = 2;
-                            this.g.beginPath();
-                            this.g.strokeStyle = this.o.fgColor;
-                            this.g.arc( this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
-                            this.g.stroke();
-
-                            return false;
-                        }
-                    }
-                });
-
-                // Example of infinite knob, iPod click wheel
-                var v, up=0,down=0,i=0
-                    ,$idir = $("div.idir")
-                    ,$ival = $("div.ival")
-                    ,incr = function() { i++; $idir.show().html("+").fadeOut(); $ival.html(i); }
-                    ,decr = function() { i--; $idir.show().html("-").fadeOut(); $ival.html(i); };
-                $("input.infinite").knob(
-                                    {
-                                    min : 0
-                                    , max : 20
-                                    , stopper : false
-                                    , change : function () {
-                                                    if(v > this.cv){
-                                                        if(up){
-                                                            decr();
-                                                            up=0;
-                                                        }else{up=1;down=0;}
-                                                    } else {
-                                                        if(v < this.cv){
-                                                            if(down){
-                                                                incr();
-                                                                down=0;
-                                                            }else{down=1;up=0;}
-                                                        }
-                                                    }
-                                                    v = this.cv;
-                                                }
-                                    });
-            });
-        </script>
+        <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -126,30 +18,27 @@
     <h1>Pitch Pipe</h1>
   </header>
   <div class="container">
-    <div class="circle center" id="pitch-pipe">
-      <div class="center">
 
-        <div id="circle">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
-            <defs>
-              <path id="criclePath" d=" M 150, 150 m -120, 0 a 120,120 0 0,1 240,0 a 120,120 0 0,1 -240,0 "/>
-            </defs>
-            <circle cx="150" cy="150" r="150" fill="#4A4A4A"/>
-            <g>
-              <use xlink:href="#criclePath" fill="none"/>
-              <text fill="#fff">
-                <textPath xlink:href="#criclePath" style="word-spacing: 23;">
-                  A A# B C C# D D# E F F# G G#
-                </textPath>
-              </text>
-            </g>
-          </svg>
-        </div>
-        <div class="selector">
-          <input class="knob" data-displayPrevious=true data-lincap=round data-cursor=true data-width="100%" data-fgColor="#33AD5C" data-thickness=.2 value="9" data-max="12">
-        </div>
-      </div>
+    <div id="pitch-pipe">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+        <defs>
+          <path id="circlePath" d=" M 150, 150 m -120, 0 a 120,120 0 0,1 240,0 a 120,120 0 0,1 -240,0 "/>
+        </defs>
+        <circle cx="150" cy="150" r="150" fill="#4A4A4A"/>
+        <g>
+          <use xlink:href="#circlePath" fill="none"/>
+          <text fill="#fff">
+            <textPath xlink:href="#circlePath" style="word-spacing: 29.5;">
+              A A# B C C# D D# E F F# G G#
+            </textPath>
+          </text>
+        </g>
+      </svg>
+
+    <div id="selector">
+      <input class="knob" data-displayPrevious=true data-lincap=round data-cursor=true data-width="100%" data-fgColor="#33AD5C" data-thickness=.2 value="9" data-max="12">
     </div>
+
   </div>
 
 </body>

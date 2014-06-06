@@ -9,8 +9,6 @@ $sel-bg-color: red;
 /*Dimensions*/
 $pitch-pipe-margin: 80px;
 
-/*Responsive Sizes*/
-
 /******General******/
 
 /*Fonts*/
@@ -43,12 +41,15 @@ header {
   text-shadow: 3px 3px lighten($primary-color, 30%);
 }
 
-/*Pitch Pipe SVG Styling*/
+/*******Pitch Pipe******/
+
+/*SVG*/
 #pitch-pipe {
   margin-top: $pitch-pipe-margin;
-}
-#container {
-  margin: 5%;
+  width: 600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #circle {
@@ -58,8 +59,8 @@ header {
   overflow: hidden;
 }
 
-#circle text {
-  font-family: Monospace;
+#pitch-pipe text {
+  font-family: "Oleo Script", sans-serif;
   font-size: 32px;
   font-weight: bold;
 }
@@ -72,30 +73,84 @@ header {
   height: 100%;
 }
 
+/*Selector*/
+#selector {
+  position: relative;
+  margin-top: -112.5%;
+  margin-left: -11.5%;
+  width: 742px;
+  height: 742px;
+}
+
 /*Classes*/
 .container {
   width: 100%;
   height: 100%;
-}
-
-.center {
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 }
 
 .circle {
-  border-radius: 50%;
-  width: 600px;
-  height: 600px;
-  background-color: $primary-color;
-  color: $background-color;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.selector {
-  position: relative;
-  margin-top: -668px;
-  margin-left: -70px;
-  width: 742px;
-  height: 742px;
+/******Responsive Sizes******/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
 }
