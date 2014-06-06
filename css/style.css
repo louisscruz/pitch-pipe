@@ -106,6 +106,10 @@ header {
   color: #e3e3e3;
 }
 
+#output b {
+  font-size: 24px;
+}
+
 /******Responsive Sizes******/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {

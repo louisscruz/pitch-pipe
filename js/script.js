@@ -16,7 +16,7 @@ $(function($) {
           if(value==1) {
             $("#output").html("<h2>C<b>&#x266f;</b></h2>");
             $("#output b")
-              .css( "font-size", "100px" );
+              
           } else if(value==2) {
             $("#output").html("<h2>D</h2>");
           } else if(value==3) {
