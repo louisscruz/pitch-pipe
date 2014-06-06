@@ -31,7 +31,7 @@ $(function($) {
             } else if(value==9) {
               return 'A'
             } else if(value==10) {
-              return 'A#'
+              return 'Bb'
             } else if(value==11) {
               return 'B'
             } else {

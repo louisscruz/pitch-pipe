@@ -12,7 +12,13 @@ $pitch-pipe-margin: 80px;
 /******General******/
 
 /*Fonts*/
+.flat {
+  font-size: 22px;
+}
 
+.sharp {
+  font-size: 20px;
+}
 
 
 /*Universals*/
@@ -36,6 +42,15 @@ header {
   font:32px "Oleo Script", sans-serif;
   width: 100%;
   margin: 0px;
+  padding: 0px;
+  text-align: center;
+  text-shadow: 3px 3px lighten($primary-color, 30%);
+}
+
+footer {
+  font:12px "Oleo Script", sans-serif;
+  width: 100%;
+  margin: 50%;
   padding: 0px;
   text-align: center;
   text-shadow: 3px 3px lighten($primary-color, 30%);
