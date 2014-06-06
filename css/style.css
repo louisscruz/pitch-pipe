@@ -107,7 +107,7 @@ header {
 }
 
 #output b {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 /******Responsive Sizes******/
@@ -142,7 +142,7 @@ header {
   }
 
   #output {
-    margin-top: -110%;
+    margin-top: -112%;
     font-size: 48px;
   }
 }
