@@ -2,7 +2,7 @@
 
 /*Colors*/
 $primary-color: #33AD5C;
-$background-color: #dcdcdc;
+$background-color: #e3e3e3;
 $sel-color: #000;
 $sel-bg-color: red;
 
@@ -28,8 +28,7 @@ $pitch-pipe-margin: 80px;
 }
 
 body {
-  background-color: $background-color;
-  background-image: url("pitch-pipe.png");
+  background: $background-color;
   color: $primary-color;
   margin: 0;
   height: 100%;
@@ -40,11 +39,12 @@ body {
 
 header {
   font:32px "Oleo Script", sans-serif;
+  color: lighten($primary-color, 25%);
   width: 100%;
   margin: 0px;
   padding: 0px;
   text-align: center;
-  text-shadow: 3px 3px lighten($primary-color, 30%);
+  text-shadow: 4px 4px $primary-color;
 }
 
 footer {
@@ -53,7 +53,6 @@ footer {
   margin: 50%;
   padding: 0px;
   text-align: center;
-  text-shadow: 3px 3px lighten($primary-color, 30%);
 }
 
 /*******Pitch Pipe******/

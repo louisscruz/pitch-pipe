@@ -18,8 +18,7 @@
 }
 
 body {
-  background-color: gainsboro;
-  background-image: url("pitch-pipe.png");
+  background: #e3e3e3;
   color: #33ad5c;
   margin: 0;
   height: 100%;
@@ -30,11 +29,12 @@ body {
 
 header {
   font: 32px "Oleo Script", sans-serif;
+  color: #85dba2;
   width: 100%;
   margin: 0px;
   padding: 0px;
   text-align: center;
-  text-shadow: 3px 3px #98e1b1;
+  text-shadow: 4px 4px #33ad5c;
 }
 
 footer {
@@ -43,7 +43,6 @@ footer {
   margin: 50%;
   padding: 0px;
   text-align: center;
-  text-shadow: 3px 3px #98e1b1;
 }
 
 /*******Pitch Pipe******/
