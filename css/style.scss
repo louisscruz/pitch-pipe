@@ -78,8 +78,8 @@ header {
   position: relative;
   margin-top: -112.5%;
   margin-left: -11.5%;
-  width: 742px;
-  height: 742px;
+  width: 123.67%;
+  height: 123.67%;
 }
 
 /*Classes*/
@@ -99,51 +99,81 @@ header {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
+  #pitch-pipe {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
-/* Styles */
+  #pitch-pipe {
+    width: 600px;
+    height: 600px;
+  }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) {
-
+  #pitch-pipe {
+  width: 200px;
+  height: 200px;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
+  #pitch-pipe {
+  width: 600px;
+  height: 600px;
+  }
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* Styles */
+  #pitch-pipe {
+    width: 600px;
+    height: 600px;
+  }
 }
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
+  #pitch-pipe {
+    width: 600px;
+    height: 600px;
+  }
 }
 /**********
 iPad 3
 **********/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
+  #pitch-pipe {
+    width: 700px;
+    height: 700px;
+  }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
+  #pitch-pipe {
+    width: 600px;
+    height: 600px;
+  }
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
-/* Styles */
+  #pitch-pipe {
+    width: 600px;
+    height: 600px;
+  }
 }
 
 /* Large screens ----------- */
 @media only screen  and (min-width : 1824px) {
-/* Styles */
+  #pitch-pipe {
+    width: 800px;
+    height: 800px;
+  }
 }
 
 /* iPhone 4 ----------- */
