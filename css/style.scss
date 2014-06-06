@@ -111,7 +111,7 @@ footer {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -125%;
+  margin-top: -110px;
   height: 50%;
   width: 50%;
   z-index: 1;
@@ -119,7 +119,6 @@ footer {
   font-family: Helvetica, sans-serif;
   font-size: 150px;
   font-weight: bold;
-
   color: $background-color;
 }
 
@@ -143,7 +142,7 @@ footer {
     height: 600px;
   }
   #output {
-    margin-top: -120%;
+    margin-top: -115%;
   }
 }
 
@@ -165,7 +164,7 @@ footer {
   height: 600px;
   }
   #output {
-    margin-top: -120%;
+    margin-top: -115%;
   }
 }
 
@@ -187,7 +186,7 @@ footer {
     height: 600px;
   }
   #output {
-    margin-top: -120%;
+    margin-top: -115%;
   }
 }
 /**********
@@ -219,18 +218,19 @@ iPad 3
     height: 600px;
   }
   #output {
-    margin-top: -119%;
+    margin-top: -115%;
   }
 }
 
 /* Large screens ----------- */
 @media only screen  and (min-width : 1824px) {
   #pitch-pipe {
-    width: 800px;
-    height: 800px;
+    width: 700px;
+    height: 700px;
   }
   #output {
-    margin-top: -100%;
+    margin-top: -110%;
+    font-size: 164px;
   }
 }
 
