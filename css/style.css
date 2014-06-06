@@ -206,7 +206,20 @@ iPad 3
     font-size: 150px;
   }
 }
-/* Desktops and laptops ----------- */
+/* Small Laptops ------------- */
+@media only screen and (min-width: 1024px) and (max-width: 1223px) {
+  #pitch-pipe {
+    margin-top: 55px;
+    width: 200px;
+    height: 200px;
+  }
+
+  #output {
+    margin-top: -112%;
+    font-size: 48px;
+  }
+}
+/* Regular Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   #pitch-pipe {
     width: 450px;
