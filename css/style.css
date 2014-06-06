@@ -126,9 +126,14 @@ header {
 }
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
+  header {
+    font-size: 14px;
+  }
+
   #pitch-pipe {
-    width: 450px;
-    height: 450px;
+    margin-top: 25px;
+    width: 150px;
+    height: 150px;
   }
 
   #output {
