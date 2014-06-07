@@ -46,4 +46,17 @@ $(function($) {
         $("#" + knobValue)[0].play();
     })
 
+    $( "#output-circle" ).click(function() {
+      $('#pitch-pipe').animate({  borderSpacing: -720 }, {
+          step: function(now,fx) {
+            $(this).css('-webkit-transform','rotate('+now+'deg)');
+            $(this).css('-moz-transform','rotate('+now+'deg)');
+            $(this).css('-ms-transform','rotate('+now+'deg)');
+            $(this).css('-o-transform','rotate('+now+'deg)');
+            $(this).css('transform','rotate('+now+'deg)');
+          },
+          duration:'slow'
+      },'linear');
+    });
+
 });
