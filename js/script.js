@@ -47,7 +47,10 @@ $(function($) {
     })
 
     $( "#output-circle" ).click(function() {
-      $('#pitch-pipe').animate({  borderSpacing: -720 }, {
+        $(this).fadeOut('normal', function(){
+          $(this).fadeIn();
+        });
+      $('#pitch-pipe').animate({  borderSpacing: -1080 }, {
           step: function(now,fx) {
             $(this).css('-webkit-transform','rotate('+now+'deg)');
             $(this).css('-moz-transform','rotate('+now+'deg)');
@@ -55,8 +58,8 @@ $(function($) {
             $(this).css('-o-transform','rotate('+now+'deg)');
             $(this).css('transform','rotate('+now+'deg)');
           },
-          duration:'slow'
-      },'linear');
+          duration: 2000
+      },'swing');
     });
 
 });
