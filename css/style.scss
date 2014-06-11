@@ -267,6 +267,28 @@ screen and (min-width: 569px) and (orientation: landscape) and (min-device-pixel
 
 /*Small Tablet Landscape*/
 @media
+screen and (min-width: 768px) and (orientation: portrait),
+screen and (min-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
+screen and (min-width: 768px) and (orientation: portrait) and (min-device-pixel-ratio: 1.5)  {
+  header {
+    font-size: 50px;
+
+  }
+  #pitch-pipe {
+    width: 600px;
+    height: 600px;
+    margin-top: 120px;
+
+  }
+  #output {
+    font-size: 136px;
+
+  }
+  footer {
+
+  }
+}
+@media
 screen and (min-width: 768px) and (orientation: landscape),
 screen and (min-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5),
 screen and (min-width: 768px) and (orientation: landscape) and (min-device-pixel-ratio: 1.5)  {
@@ -293,7 +315,7 @@ screen and (min-width: 768px) and (orientation: landscape) and (min-device-pixel
   }
 }
 
- /*Table Landscape*/
+ /*Desktop Landscape*/
  @media
  screen and (min-width: 1024px) and (orientation: landscape),
  screen and (min-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5),
