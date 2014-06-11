@@ -203,3 +203,47 @@ and (orientation: landscape) {
     font-size: 12px;
   }
 }
+
+/*iPhone 5 +*/
+@media screen
+and (min-width: 320px)
+and (max-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+and (orientation: portrait) {
+  header {
+    font-size: 24px;
+  }
+  #pitch-pipe {
+    margin-top: 30px;
+    height: 220px;
+    width: 220px;
+  }
+  #output {
+    font-size: 48px;
+  }
+  footer {
+    font-size: 24px;
+  }
+}
+
+@media screen
+and (min-width: 320px)
+and (max-width: 480px)
+and (orientation: landscape) {
+  header {
+    margin-top: 0px;
+    font-size: 14px;
+    margin-top: 0px;
+  }
+  #pitch-pipe {
+    margin-top: 40px;
+    height: 140px;
+    width: 140px;
+  }
+  #output {
+    font-size: 30px;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
