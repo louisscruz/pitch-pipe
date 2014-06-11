@@ -196,7 +196,7 @@ footer {
   }
 }
 /*iPhone 5 +*/
-@media only screen and (min-device-width: 640px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) and (min-resoltion: 192dpi) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 562px) and (-webkit-min-device-pixel-ratio: 2) and (min-resoltion: 192dpi) and (orientation: portrait) {
   header {
     font-size: 24px;
   }
@@ -215,7 +215,7 @@ footer {
     font-size: 24px;
   }
 }
-@media only screen and (min-device-width: 640px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) and (min-resoltion: 192dpi) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 562px) and (-webkit-min-device-pixel-ratio: 2) and (min-resoltion: 192dpi) and (orientation: landscape) {
   header {
     width: 20%;
     float: left;
