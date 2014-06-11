@@ -164,7 +164,7 @@ footer {
 
 /*iPhone 3 and 4*/
 @media
-screen and (min-width: 320px) and (max-width: 562px) and (orientation: portrait) {
+screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) {
   header {
     font-size: 24px;
   }
@@ -182,9 +182,9 @@ screen and (min-width: 320px) and (max-width: 562px) and (orientation: portrait)
 }
 
 @media
-screen and (min-width: 320px) and (max-width: 562px) and (orientation: landscape),
-screen and (min-width: 320px) and (max-width: 562px) and (orientation: landscape) and (-webkit-min-pixel-ratio: 1.5),
-screen and (min-width: 320px) and (max-width: 562px) and (orientation: landscape) and (min-pixel-ratio: 1.5)  {
+screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape),
+screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) and (-webkit-min-pixel-ratio: 1.5),
+screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) and (min-pixel-ratio: 1.5)  {
   header {
     width: 20%;
     float: left;
