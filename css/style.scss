@@ -163,10 +163,8 @@ footer {
 /******Responsive Sizes******/
 
 /*iPhone 3 and 4*/
-@media screen
-and (min-width: 320px)
-and (max-width: 562px)
-and (orientation: portrait) {
+@media
+screen and (min-width: 320px) and (max-width: 562px) and (orientation: portrait) {
   header {
     font-size: 24px;
   }
@@ -183,36 +181,10 @@ and (orientation: portrait) {
   }
 }
 
-@media screen
-and (min-width: 320px)
-and (max-width: 562px)
-and (orientation: landscape) {
-  header {
-    width: 20%;
-    float: left;
-    margin-top: 8%;
-    margin-left: 15%;
-    font-size: 20px;
-  }
-  #pitch-pipe {
-    float: right;
-    margin-top: 10%;
-    margin-right: 25%;
-    height: 150px;
-    width: 150px;
-  }
-  #output {
-    font-size: 32px;
-  }
-  footer {
-    font-size: 12px;
-  }
-}
-
-/*iPhone 5 Fix*/
 @media
-only screen and (-webkit-min-device-pixel-ratio : 1.5) and (orientation: landscape) and (max-width: 562px),
-only screen and (min-device-pixel-ratio : 1.5) and (orientation: landscape) and (max-width: 562px) {
+screen and (min-width: 320px) and (max-width: 562px) and (orientation: landscape),
+screen and (min-width: 320px) and (max-width: 562px) and (orientation: landscape) and (-webkit-min-pixel-ratio: 1.5),
+screen and (min-width: 320px) and (max-width: 562px) and (orientation: landscape) and (min-pixel-ratio: 1.5)  {
   header {
     width: 20%;
     float: left;
@@ -224,8 +196,8 @@ only screen and (min-device-pixel-ratio : 1.5) and (orientation: landscape) and 
     float: right;
     margin-top: 10%;
     margin-right: 25%;
-    height: 180px;
-    width: 180px;
+    height: 170px;
+    width: 170px;
   }
   #output {
     font-size: 38px;
