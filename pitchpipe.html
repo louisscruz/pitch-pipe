@@ -14,12 +14,11 @@
 </head>
 
 <body>
-  <header>
-    <h1>Pitch Pipe</h1>
-  </header>
 
   <div class="container">
-
+    <header>
+      <h1>Pitch Pipe</h1>
+    </header>
     <div id="pitch-pipe">
 
       <div id="pitch-pipe-svg">
@@ -27,7 +26,7 @@
           <defs>
             <path id="circlePath" d=" M 150, 150 m -120, 0 a 120,120 0 0,1 240,0 a 120,120 0 0,1 -240,0 "/>
           </defs>
-          <circle cx="150" cy="150" r="150" fill="#4A4A4A"/>
+          <circle id="svg-circle" cx="150" cy="150" r="150"/>
           <g>
             <use xlink:href="#circlePath" fill="none"/>
             <text fill="#fff">
@@ -96,11 +95,16 @@
       </div>
 
     </div>
+    <footer>
+      <ul>
 
+        <li><h2>Buy the App</h2></li>
+        <li><h2>Support Pitch Pipe</h2></li>
+
+      </ul>
+    </footer>
   </div>
 
-  <footer>
-  </footer>
 </body>
 
 </html>

@@ -18,23 +18,33 @@
 }
 
 body {
+  font-family: "Oleo Script", sans-serif;
   background: #e3e3e3;
   color: #33ad5c;
   margin: 0;
-  height: 100%;
   width: 100%;
   position: fixed;
   top: 0px;
 }
 
 header {
-  font: 32px "Oleo Script", sans-serif;
-  color: #85dba2;
+  font-size: 32px;
+  color: #3d3d3d;
   width: 100%;
   margin: 0px;
   padding: 0px;
   text-align: center;
   text-shadow: 4px 4px #33ad5c;
+}
+
+footer {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 60px;
+  bottom: 0px;
+  text-align: center;
+  padding-bottom: 16px;
 }
 
 /*******Pitch Pipe******/
@@ -74,6 +84,10 @@ header {
   width: 100%;
   padding-bottom: 100%;
   overflow: hidden;
+}
+
+#svg-circle {
+  fill: #3d3d3d;
 }
 
 #pitch-pipe text {
@@ -138,6 +152,7 @@ header {
   }
 
   #pitch-pipe {
+    margin-top: 30px;
     height: 220px;
     width: 220px;
   }

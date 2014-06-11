@@ -2,6 +2,7 @@
 
 /*Colors*/
 $primary-color: #33AD5C;
+$secondary-color: #3d3d3d;
 $background-color: #e3e3e3;
 $sel-color: #000;
 $sel-bg-color: red;
@@ -28,18 +29,18 @@ $pitch-pipe-margin: 80px;
 }
 
 body {
+  font-family: "Oleo Script", sans-serif;
   background: $background-color;
   color: $primary-color;
   margin: 0;
-  height: 100%;
   width: 100%;
   position: fixed;
   top: 0px;
 }
 
 header {
-  font:32px "Oleo Script", sans-serif;
-  color: lighten($primary-color, 25%);
+  font-size: 32px;
+  color: $secondary-color;
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -48,7 +49,13 @@ header {
 }
 
 footer {
-
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 60px;
+  bottom: 0px;
+  text-align: center;
+  padding-bottom: 16px;
 }
 
 /*******Pitch Pipe******/
@@ -88,6 +95,10 @@ footer {
   width: 100%;
   padding-bottom: 100%;
   overflow: hidden;
+}
+
+#svg-circle {
+  fill: $secondary-color;
 }
 
 #pitch-pipe text {
@@ -153,6 +164,7 @@ and (orientation: portrait) {
     font-size: 24px;
   }
   #pitch-pipe {
+    margin-top: 30px;
     height: 220px;
     width: 220px;
   }
