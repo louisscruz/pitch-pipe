@@ -210,10 +210,10 @@ and (orientation: landscape) {
 }
 
 /*iPhone 5 +*/
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 568px) and (orientation: portrait),
-only screen and ( min-resolution: 192dpi) and (min-width: 320px) and (max-width: 568px) and (orientation: portrait),
-only screen and ( min-resolution: 2dppx) and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
   header {
     font-size: 24px;
   }
@@ -230,10 +230,10 @@ only screen and ( min-resolution: 2dppx) and (min-width: 320px) and (max-width: 
   }
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 568px) and (orientation: landscape),
-only screen and ( min-resolution: 192dpi) and (min-width: 320px) and (max-width: 568px) and (orientation: landscape),
-only screen and ( min-resolution: 2dppx) and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
   header {
     width: 20%;
     float: left;
