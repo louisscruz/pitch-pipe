@@ -57,7 +57,8 @@ header {
 
 footer {
   position: fixed;
-  background-color: white;
+  background-color: $secondary-color;
+  text-shadow: 1px 1px $background-color;
   width: 100%;
   bottom: 0px;
   text-align: center;
@@ -265,23 +266,23 @@ screen and (min-width: 569px) and (orientation: landscape) and (min-device-pixel
   }
 }
 
-/*Small Tablet Landscape*/
+/*Tablet*/
 @media
 screen and (min-width: 768px) and (orientation: portrait),
 screen and (min-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
 screen and (min-width: 768px) and (orientation: portrait) and (min-device-pixel-ratio: 1.5)  {
   header {
-    font-size: 50px;
-
+    font-size: 48px;
+    margin-top: -50px;
   }
   #pitch-pipe {
-    width: 600px;
-    height: 600px;
-    margin-top: 120px;
+    width: 560px;
+    height: 560px;
+    margin-top: 80px;
 
   }
   #output {
-    font-size: 136px;
+    font-size: 124px;
 
   }
   footer {
