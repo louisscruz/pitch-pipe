@@ -41,7 +41,9 @@ $(function($) {
         },
     });
 
-    $("#play").click(function() {
+
+
+    $("#output-circle").click(function() {
         $("#" + knobValue)[0].load();
         $("#" + knobValue)[0].play();
     })

@@ -130,7 +130,6 @@ footer {
   margin-left: -11.85%;
   width: 123.67%;
   height: 123.67%;
-  data-fgColor: #33AD5C;
 }
 
 /*Output Display*/
@@ -152,9 +151,9 @@ footer {
   width: 100%;
   z-index: 1;
   text-align: center;
-  font-family: Helvetica, sans-serif;
-  font-size: 90px;
-  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 88px;
   line-height: 0;
   color: $primary-color;
 }
