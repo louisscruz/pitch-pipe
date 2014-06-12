@@ -1,7 +1,11 @@
-/******SCSS Variables******/
+/******
+SCSS VARIABLES
+******/
 /*Colors*/
 /*Dimensions*/
-/******General******/
+/******
+GENERAL
+******/
 /*Fonts*/
 .flat {
   font-size: 22px;
@@ -53,7 +57,9 @@ footer {
   font-size: 30px;
 }
 
-/*******Pitch Pipe******/
+/******
+PITCH PIPE
+******/
 /*Sizing Classes*/
 .container {
   width: 100%;
@@ -128,7 +134,6 @@ footer {
   width: 50%;
   background-color: white;
   border-radius: 50%;
-  z-index: 1;
 }
 
 #output {
@@ -137,7 +142,6 @@ footer {
   margin-top: -5%;
   height: 100%;
   width: 100%;
-  z-index: 1;
   text-align: center;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
@@ -155,11 +159,13 @@ footer {
   padding: 1px;
 }
 
-/******Responsive Sizes******/
+/******
+RESPONSIVE SIZES
+******/
 /*****
 PHONES
 *****/
-/*iPhone 3 and 4*/
+/*iPhone 3 and 4 Portrait*/
 @media screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) {
   header {
     font-size: 24px;
@@ -183,11 +189,12 @@ PHONES
     margin-bottom: -6px;
   }
 }
+/*iPhone 3 and 4 Landscape*/
 @media screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape), screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) and (min-device-pixel-ratio: 1.5) {
   header {
     width: 20%;
     float: left;
-    margin-top: 8%;
+    margin-top: 10%;
     margin-left: 15%;
     font-size: 20px;
   }
@@ -195,7 +202,7 @@ PHONES
   #pitch-pipe {
     float: right;
     margin-top: 10%;
-    margin-right: 25%;
+    margin-right: 20%;
     height: 170px;
     width: 170px;
   }
@@ -205,7 +212,7 @@ PHONES
   }
 
   footer {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 /*iPhone 5 (placement)*/
@@ -237,8 +244,8 @@ MINI TABLETS
     width: 20%;
     float: left;
     margin-top: 8%;
-    margin-left: 15%;
-    font-size: 24px;
+    margin-left: 13%;
+    font-size: 28px;
     text-align: left;
   }
 
@@ -269,13 +276,13 @@ TABLETS
   }
 
   #pitch-pipe {
-    width: 560px;
-    height: 560px;
+    width: 460px;
+    height: 460px;
     margin-top: 80px;
   }
 
   #output {
-    font-size: 124px;
+    font-size: 104px;
   }
 }
 /*Tablet Landscape*/
@@ -284,8 +291,8 @@ TABLETS
     width: 20%;
     float: left;
     margin-top: 8%;
-    margin-left: 15%;
-    font-size: 36px;
+    margin-left: 9%;
+    font-size: 40px;
     text-align: left;
   }
 
@@ -310,6 +317,23 @@ DESKTOP
 *****/
 /*Desktop*/
 @media screen and (min-width: 1025px), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-width: 1025px) and (min-device-pixel-ratio: 1.5) {
+  header {
+    font-size: 48px;
+    margin-top: -50px;
+  }
+
+  #pitch-pipe {
+    width: 460px;
+    height: 460px;
+    margin-top: 80px;
+  }
+
+  #output {
+    font-size: 104px;
+  }
+}
+/*Desktop Large*/
+@media screen and (min-width: 1281px), screen and (min-width: 1281px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-width: 1281px) and (min-device-pixel-ratio: 1.5) {
   header {
     font-size: 48px;
     margin-top: -50px;
