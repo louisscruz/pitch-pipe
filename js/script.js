@@ -49,9 +49,10 @@ $(function($) {
     //ANIMATIONS
 
     $("#output-circle").click(function() {
-        $(this).fadeOut('normal', function(){
-          $(this).fadeIn();
-        });
+        $(this).animate({
+          backgroundColor: "#000",
+          color: "#fff"
+        }, 1000 ),
       $("#pitch-pipe").animate({  borderSpacing: -1080 }, {
           step: function(now,fx) {
             $(this).css('-webkit-transform','rotate('+now+'deg)');
