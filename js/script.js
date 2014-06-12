@@ -45,29 +45,29 @@ $(function($) {
 
     $("#output-circle").click(function() {
         if(knobValue==1) {
-          $("#A")[0].play();
-        } else if(knobValue==2) {
-          $("#Bf")[0].play();
-        } else if(knobValue==3) {
-          $("#B")[0].play();
-        } else if(knobValue==4) {
-          $("#C")[0].play();
-        } else if(knobValue==5) {
           $("#Cs")[0].play();
-        } else if(knobValue==6) {
+        } else if(knobValue==2) {
           $("#D")[0].play();
-        } else if(knobValue==7) {
+        } else if(knobValue==3) {
           $("#Ds")[0].play();
-        } else if(knobValue==8) {
+        } else if(knobValue==4) {
           $("#E")[0].play();
-        } else if(knobValue==9) {
+        } else if(knobValue==5) {
           $("#F")[0].play();
-        } else if(knobValue==10) {
+        } else if(knobValue==6) {
           $("#Fs")[0].play();
-        } else if(knobValue==11) {
+        } else if(knobValue==7) {
           $("#G")[0].play();
-        } else {
+        } else if(knobValue==8) {
           $("#Gs")[0].play();
+        } else if(knobValue==9) {
+          $("#A")[0].play();
+        } else if(knobValue==10) {
+          $("#Bf")[0].play();
+        } else if(knobValue==11) {
+          $("#B")[0].play();
+        } else {
+          $("#C")[0].play();
         }
     });
 
