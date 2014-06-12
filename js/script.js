@@ -1,5 +1,7 @@
 $(function($) {
 
+    //KNOB FUNCTIONS
+
     $(".knob").knob({
         change : function (value) {
             //console.log("change : " + value);
@@ -11,6 +13,9 @@ $(function($) {
         cancel : function () {
             console.log("cancel : ", this);
         },
+
+        //OUTPUT FROM VALUE
+
         format : function (value) {
           knobValue = value;
           if(value==1) {
@@ -41,35 +46,7 @@ $(function($) {
         }
     });
 
-
-
-    $("#output-circle").click(function() {
-        if(knobValue==1) {
-          $("#Cs")[0].play();
-        } else if(knobValue==2) {
-          $("#D")[0].play();
-        } else if(knobValue==3) {
-          $("#Ds")[0].play();
-        } else if(knobValue==4) {
-          $("#E")[0].play();
-        } else if(knobValue==5) {
-          $("#F")[0].play();
-        } else if(knobValue==6) {
-          $("#Fs")[0].play();
-        } else if(knobValue==7) {
-          $("#G")[0].play();
-        } else if(knobValue==8) {
-          $("#Gs")[0].play();
-        } else if(knobValue==9) {
-          $("#A")[0].play();
-        } else if(knobValue==10) {
-          $("#Bf")[0].play();
-        } else if(knobValue==11) {
-          $("#B")[0].play();
-        } else {
-          $("#C")[0].play();
-        }
-    });
+    //ANIMATIONS
 
     $("#output-circle").click(function() {
         $(this).fadeOut('normal', function(){
@@ -85,6 +62,48 @@ $(function($) {
           },
           duration: 2000
       },'swing');
+    });
+
+    //AUDIO FUNCTIONALITY
+
+    $("#output-circle").click(function() {
+        if(knobValue==1) {
+          $("#Cs")[0].load();
+          $("#Cs")[0].play();
+        } else if(knobValue==2) {
+          $("#D")[0].load();
+          $("#D")[0].play();
+        } else if(knobValue==3) {
+          $("#Ds")[0].load();
+          $("#Ds")[0].play();
+        } else if(knobValue==4) {
+          $("#E")[0].load();
+          $("#E")[0].play();
+        } else if(knobValue==5) {
+          $("#F")[0].load();
+          $("#F")[0].play();
+        } else if(knobValue==6) {
+          $("#Fs")[0].load();
+          $("#Fs")[0].play();
+        } else if(knobValue==7) {
+          $("#G")[0].load();
+          $("#G")[0].play();
+        } else if(knobValue==8) {
+          $("#Gs")[0].load();
+          $("#Gs")[0].play();
+        } else if(knobValue==9) {
+          $("#A")[0].load();
+          $("#A")[0].play();
+        } else if(knobValue==10) {
+          $("#Bf")[0].load();
+          $("#Bf")[0].play();
+        } else if(knobValue==11) {
+          $("#B")[0].load();
+          $("#B")[0].play();
+        } else {
+          $("#C")[0].load();
+          $("#C")[0].play();
+        }
     });
 
 });
