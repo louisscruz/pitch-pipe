@@ -194,21 +194,21 @@ PHONES
   header {
     width: 20%;
     float: left;
-    margin-top: 10%;
+    margin-top: 8%;
     margin-left: 15%;
     font-size: 20px;
   }
 
   #pitch-pipe {
     float: right;
-    margin-top: 10%;
+    margin-top: 8%;
     margin-right: 20%;
-    height: 170px;
-    width: 170px;
+    height: 165px;
+    width: 165px;
   }
 
   #output {
-    font-size: 38px;
+    font-size: 37px;
   }
 
   footer {
