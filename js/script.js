@@ -38,21 +38,44 @@ $(function($) {
           } else {
             $("#output").html("<h2>C</h2>");
           }
-        },
+        }
     });
 
 
 
     $("#output-circle").click(function() {
-        $("#" + knobValue)[0].load();
-        $("#" + knobValue)[0].play();
-    })
+        if(knobValue==1) {
+          $("#A")[0].play();
+        } else if(knobValue==2) {
+          $("#Bf")[0].play();
+        } else if(knobValue==3) {
+          $("#B")[0].play();
+        } else if(knobValue==4) {
+          $("#C")[0].play();
+        } else if(knobValue==5) {
+          $("#Cs")[0].play();
+        } else if(knobValue==6) {
+          $("#D")[0].play();
+        } else if(knobValue==7) {
+          $("#Ds")[0].play();
+        } else if(knobValue==8) {
+          $("#E")[0].play();
+        } else if(knobValue==9) {
+          $("#F")[0].play();
+        } else if(knobValue==10) {
+          $("#Fs")[0].play();
+        } else if(knobValue==11) {
+          $("#G")[0].play();
+        } else {
+          $("#Gs")[0].play();
+        }
+    });
 
-    $( "#output-circle" ).click(function() {
+    $("#output-circle").click(function() {
         $(this).fadeOut('normal', function(){
           $(this).fadeIn();
         });
-      $('#pitch-pipe').animate({  borderSpacing: -1080 }, {
+      $("#pitch-pipe").animate({  borderSpacing: -1080 }, {
           step: function(now,fx) {
             $(this).css('-webkit-transform','rotate('+now+'deg)');
             $(this).css('-moz-transform','rotate('+now+'deg)');
