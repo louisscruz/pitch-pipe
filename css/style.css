@@ -166,7 +166,7 @@ RESPONSIVE SIZES
 PHONES
 *****/
 /*iPhone 3 and 4 Portrait*/
-@media screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) {
+@media screen and (min-width: 320px) and (max-width: 600px) and (orientation: portrait) {
   header {
     font-size: 24px;
   }
@@ -190,7 +190,7 @@ PHONES
   }
 }
 /*iPhone 3 and 4 Landscape*/
-@media screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape), screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) and (min-device-pixel-ratio: 1.5) {
+@media screen and (min-width: 320px) and (max-width: 600px) and (orientation: landscape), screen and (min-width: 320px) and (max-width: 600px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-width: 320px) and (max-width: 600px) and (orientation: landscape) and (min-device-pixel-ratio: 1.5) {
   header {
     width: 20%;
     float: left;
@@ -216,7 +216,7 @@ PHONES
   }
 }
 /*iPhone 5 (placement)*/
-@media screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait), screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) and (min-device-pixel-ratio: 1.5) {
+@media screen and (min-width: 320px) and (max-width: 600px) and (orientation: portrait), screen and (min-width: 320px) and (max-width: 600px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-width: 320px) and (max-width: 600px) and (orientation: portrait) and (min-device-pixel-ratio: 1.5) {
   header {
     font-size: 24px;
   }
@@ -239,7 +239,7 @@ PHONES
 MINI TABLETS
 *****/
 /*Mini Tablet Landscape*/
-@media screen and (min-width: 569px) and (max-width: 767px) and (orientation: landscape), screen and (min-width: 569px) and (max-width: 767px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-width: 569px) and (max-width: 767px) and (orientation: landscape) and (min-device-pixel-ratio: 1.5) {
+@media screen and (min-width: 601px) and (max-width: 767px) and (orientation: landscape), screen and (min-width: 601px) and (max-width: 767px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-width: 601px) and (max-width: 767px) and (orientation: landscape) and (min-device-pixel-ratio: 1.5) {
   header {
     width: 20%;
     float: left;
