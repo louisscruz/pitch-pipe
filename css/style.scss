@@ -100,13 +100,6 @@ PITCH PIPE
   margin-right: auto;
 }
 
-#circle {
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%;
-  overflow: hidden;
-}
-
 #svg-circle {
   fill: $secondary-color;
 }
@@ -117,13 +110,6 @@ PITCH PIPE
   font-weight: bold;
 }
 
-#circle svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
 
 /*Selector*/
 #selector {

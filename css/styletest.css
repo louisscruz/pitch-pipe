@@ -1,0 +1,142 @@
+/*=================
+SCSS VARIABLES
+=================*/
+/*=================
+GENERAL
+=================*/
+::selection {
+  background-color: red;
+  color: black;
+}
+
+body {
+  background: #bdbdbd;
+  color: #33ad5c;
+  font-family: "Oleo Script", sans-serif;
+}
+
+/*=================
+LAYOUT
+=================*/
+.outer {
+  display: table;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+/*=================
+GENERAL
+=================*/
+/*
+Pitch Pipe
+*/
+header {
+  color: #3d3d3d;
+  line-height: 1;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 124px;
+  text-align: center;
+  text-shadow: 4px 4px #33ad5c;
+}
+
+/*Main*/
+#pitch-pipe {
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+  position: relative;
+  width: 400px;
+}
+
+/*SVG*/
+#pitch-pipe-svg {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#svg-circle {
+  fill: #3d3d3d;
+}
+
+#pitch-pipe text {
+  font-family: "Oleo Script", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.flat {
+  font-size: 22px;
+}
+
+.sharp {
+  font-size: 20px;
+}
+
+/*Selector*/
+#selector {
+  height: 123.67%;
+  margin-top: -111.8%;
+  margin-left: -11.85%;
+  position: relative;
+  width: 123.67%;
+}
+
+/*Output Display*/
+#output-circle {
+  background-color: white;
+  border-radius: 50%;
+  height: 50%;
+  margin-left: 25%;
+  margin-top: -86.8%;
+  position: absolute;
+  width: 50%;
+}
+
+#output {
+  color: #33ad5c;
+  font-family: "Oswald", sans-serif;
+  font-size: 88px;
+  font-weight: 700;
+  height: 100%;
+  line-height: 0;
+  margin-left: 0%;
+  margin-top: -5%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+#output b {
+  font-size: 0.5em;
+}
+
+/*=================
+RESPONSIVE SIZES
+=================*/
+@media screen and (orientation: landscape) {
+  header {
+    float: left;
+  }
+
+  #pitch-pipe {
+    float: right;
+  }
+}
