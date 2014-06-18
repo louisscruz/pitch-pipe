@@ -11,6 +11,8 @@ html {
 
 body {
   background: #bdbdbd;
+  background-image: url(/img/bg.png);
+  background-repeat: repeat;
   color: #33ad5c;
   font-family: "Oleo Script", sans-serif;
   margin: 0;
