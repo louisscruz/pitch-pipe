@@ -15,6 +15,7 @@ body {
   color: #33ad5c;
   font-family: "Oleo Script", sans-serif;
   margin: 0;
+  width: auto;
 }
 
 /*=================
@@ -41,9 +42,7 @@ LAYOUT
 /*=================
 GENERAL
 =================*/
-/*
-Pitch Pipe
-*/
+/*Pitch Pipe*/
 header {
   color: #3d3d3d;
   line-height: 1;
