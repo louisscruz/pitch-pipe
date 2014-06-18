@@ -55,14 +55,13 @@ GENERAL
 
 header {
   color: $secondary-color;
-  line-height: 1;
-  position: absolute;
-  margin-top: -150px;
-  margin-left: 15%;
+  line-height: 0.8;
   font-size: 56px;
+  margin-right: 0;
+  margin-bottom: 48px;
+  position: relative;
   text-align: center;
   text-shadow: 4px 4px $primary-color;
-  width: 40%;
 }
 
 /*Main*/
