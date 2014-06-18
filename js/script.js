@@ -47,22 +47,22 @@ $(function($) {
     });
 
     //ANIMATIONS
-
+    
     $("#output-circle").click(function() {
         $(this).animate({
-          backgroundColor: "#000",
+          backgroundColor: "#bdbdbd",
           color: "#fff"
         }, 1000 ),
-      $("#pitch-pipe").animate({  borderSpacing: -1080 }, {
-          step: function(now,fx) {
-            $(this).css('-webkit-transform','rotate('+now+'deg)');
-            $(this).css('-moz-transform','rotate('+now+'deg)');
-            $(this).css('-ms-transform','rotate('+now+'deg)');
-            $(this).css('-o-transform','rotate('+now+'deg)');
-            $(this).css('transform','rotate('+now+'deg)');
-          },
-          duration: 2000
-      },'swing');
+        $("#pitch-pipe").animate({  borderSpacing: -1080 }, {
+            step: function(now,fx) {
+              $(this).css('-webkit-transform','rotate('+now+'deg)');
+              $(this).css('-moz-transform','rotate('+now+'deg)');
+              $(this).css('-ms-transform','rotate('+now+'deg)');
+              $(this).css('-o-transform','rotate('+now+'deg)');
+              $(this).css('transform','rotate('+now+'deg)');
+            },
+            duration: 2000
+        },'swing');
     });
 
     //AUDIO FUNCTIONALITY
