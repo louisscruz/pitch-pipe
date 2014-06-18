@@ -6,8 +6,7 @@ GENERAL
 =================*/
 html {
   width: 100%;
-  margin: 0 auto;
-  overflow-x: hidden;
+  margin: 0;
 }
 
 body {
@@ -15,8 +14,7 @@ body {
   color: #33ad5c;
   font-family: "Oleo Script", sans-serif;
   margin: 0;
-  overflow-x: hidden;
-  width: auto;
+  width: 100%;
 }
 
 ::selection {
@@ -53,9 +51,9 @@ header {
   color: #3d3d3d;
   line-height: 1;
   position: absolute;
-  margin-top: -600px;
-  margin-left: 30%;
-  font-size: 124px;
+  margin-top: -150px;
+  margin-left: 15%;
+  font-size: 56px;
   text-align: center;
   text-shadow: 4px 4px #33ad5c;
   width: 40%;
@@ -141,6 +139,8 @@ RESPONSIVE SIZES
 @media screen and (orientation: landscape) {
   header {
     float: left;
+    margin-left: 0;
+    margin-top: 5%;
   }
 
   #pitch-pipe {
