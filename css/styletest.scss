@@ -10,9 +10,8 @@ $sel-bg-color: red;
 /*=================
 GENERAL
 =================*/
-::selection {
-  background-color: $sel-bg-color;
-  color: $sel-color;
+html {
+  margin:0 auto;
 }
 body {
   background: $background-color;
@@ -20,6 +19,10 @@ body {
   font-family: "Oleo Script", sans-serif;
   margin: 0;
   width: auto;
+}
+::selection {
+  background-color: $sel-bg-color;
+  color: $sel-color;
 }
 
 /*=================
