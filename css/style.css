@@ -60,6 +60,10 @@ header {
   text-shadow: 4px 4px #33ad5c;
 }
 
+header b {
+  font-size: 30%;
+}
+
 /*Main*/
 #pitch-pipe {
   height: 150px;
