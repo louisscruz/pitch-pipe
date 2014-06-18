@@ -1,103 +1,87 @@
-/******
+/*=================
 SCSS VARIABLES
-******/
-
-/*Colors*/
+=================*/
 $primary-color: #33AD5C;
 $secondary-color: #3d3d3d;
 $background-color: #bdbdbd;
 $sel-color: #000;
 $sel-bg-color: red;
 
-/*Dimensions*/
-
-
-/******
+/*=================
 GENERAL
-******/
+=================*/
 
-/*Fonts*/
-.flat {
-  font-size: 22px;
+html {
+  width: 100%;
+  margin: 0;
 }
-
-.sharp {
-  font-size: 20px;
-}
-
-
-/*Universals*/
-::selection {
-  color: $sel-color;
-  background-color: $sel-bg-color;
-}
-
 body {
-  font-family: "Oleo Script", sans-serif;
   background: $background-color;
+  background-image: url(/img/bg.png);
+  background-repeat: repeat;
   color: $primary-color;
+  font-family: "Oleo Script", sans-serif;
   margin: 0;
   width: 100%;
-  position: fixed;
-  top: 0px;
-  background: $background-color;
 }
+::selection {
+  background-color: $sel-bg-color;
+  color: $sel-color;
+}
+
+/*=================
+LAYOUT
+=================*/
+
+.outer {
+    display: table;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+/*=================
+GENERAL
+=================*/
+
+/*Pitch Pipe*/
 
 header {
-  font-size: 32px;
   color: $secondary-color;
-  width: 100%;
-  margin: 0px;
-  margin-top: -10px;
-  padding: 0px;
+  line-height: 0.8;
+  font-size: 56px;
+  margin-right: 0;
+  margin-bottom: 48px;
+  position: relative;
   text-align: center;
   text-shadow: 4px 4px $primary-color;
-  line-height: 1;
 }
 
-footer {
-  position: fixed;
-  background-color: $secondary-color;
-  text-shadow: 1px 1px $background-color;
-  width: 100%;
-  bottom: 0px;
-  text-align: center;
-  padding: 0px;
-  font-size: 30px;
-}
-
-/******
-PITCH PIPE
-******/
-
-/*Sizing Classes*/
-.container {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.circle {
-  margin-left: auto;
-  margin-right: auto;
-}
 /*Main*/
 #pitch-pipe {
-  margin-top: 60px;
-  position: relative;
-  width: 400px;
-  height: 400px;
+  height: 150px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1.3%;
+  position: relative;
+  width: 150px;
 }
 
 /*SVG*/
 #pitch-pipe-svg {
-  width: 100%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 #svg-circle {
@@ -110,45 +94,115 @@ PITCH PIPE
   font-weight: bold;
 }
 
+.flat {
+  font-size: 22px;
+}
+
+.sharp {
+  font-size: 20px;
+}
 
 /*Selector*/
 #selector {
-  position: relative;
-  margin-top: -111.8%;
-  margin-left: -11.85%;
-  width: 123.67%;
   height: 123.67%;
+  margin-top: -111.5%;
+  margin-left: -12%;
+  position: relative;
+  width: 123.67%;
 }
 
 /*Output Display*/
 #output-circle {
-  position: absolute;
-  margin-left: 25%;
-  margin-top: -87%;
-  height: 50%;
-  width: 50%;
   background-color: white;
   border-radius: 50%;
+  height: 50%;
+  margin-left: 25%;
+  margin-top: -86.85%;
+  position: absolute;
+  width: 50%;
 }
 #output {
-  position: absolute;
+  color: $primary-color;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  height: 100%;
+  line-height: 0;
   margin-left: 0%;
   margin-top: -5%;
-  height: 100%;
-  width: 100%;
+  position: absolute;
   text-align: center;
-  font-family: "Oswald", sans-serif;
-  font-weight: 700;
-  font-size: 88px;
-  line-height: 0;
-  color: $primary-color;
+  width: 100%;
 }
-
 #output b {
   font-size: 0.5em;
 }
 
-/******Footer******/
-#donate {
-  padding: 1px;
+/*=================
+RESPONSIVE SIZES
+=================*/
+
+/*Set landscape*/
+
+@media screen and (orientation: landscape) {
+  header {
+    float: left;
+    margin-left: 0px;
+    margin-top: 5%;
+  }
+  #pitch-pipe {
+    float: right;
+  }
+}
+
+/*Small Tablet Portrait*/
+@media screen and (min-width: 480px) and (orientation: portrait) {
+  header {
+    font-size: 68px;
+  }
+  #pitch-pipe {
+    height: 240px;
+    width: 240px;
+  }
+  #output {
+    font-size: 52px;
+  }
+}
+
+@media screen and (min-width: 640px) and (orientation: landscape) {
+  #pitch-pipe {
+    height: 210px;
+    width: 210px;
+  }
+  #output {
+    font-size: 46px;
+  }
+}
+
+/*Tablet Portrait*/
+@media screen and (min-width: 640px) and (orientation: portrait) {
+  header {
+    font-size: 80px;
+    margin-bottom: 72px;
+  }
+  #pitch-pipe {
+    height: 360px;
+    width: 360px;
+  }
+  #output {
+    font-size: 78px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  header {
+    font-size: 80px;
+  }
+  #pitch-pipe {
+    height: 320px;
+    width: 320px;
+  }
+  #output {
+    font-size: 72px;
+  }
 }
