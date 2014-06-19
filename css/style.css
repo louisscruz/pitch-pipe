@@ -145,7 +145,7 @@ header b {
 RESPONSIVE SIZES
 =================*/
 /*Set landscape*/
-@media screen and (orientation: landscape) {
+@media screen and (max-width: 1199px) and (orientation: landscape) {
   header {
     float: left;
     margin-left: 0px;
@@ -209,5 +209,21 @@ RESPONSIVE SIZES
 
   #output {
     font-size: 72px;
+  }
+}
+/*Large Screen*/
+@media screen and (min-width: 1200px) {
+  header {
+    font-size: 100px;
+    margin-bottom: 100px;
+  }
+
+  #pitch-pipe {
+    height: 560px;
+    width: 560px;
+  }
+
+  #output {
+    font-size: 120px;
   }
 }
