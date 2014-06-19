@@ -94,7 +94,7 @@ header b {
 
 .flat {
   font-size: 22px;
-  font-family: Arial, Verdana, sans-serif;
+  font-family: Helvetica, Verdana, sans-serif;
 }
 
 .sharp {
@@ -138,7 +138,7 @@ header b {
 
 #output b {
   font-size: 0.5em;
-  font-family: Arial, Verdana, sans-serif;
+  font-family: Tahoma, Verdana, sans-serif;
 }
 
 /*=================
