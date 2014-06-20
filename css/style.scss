@@ -214,7 +214,7 @@ RESPONSIVE SIZES
   }
 }
 
-/*Large Screen*/
+/*Desktop*/
 @media screen and (min-width: 1200px) {
   header {
     font-size: 100px;
@@ -226,5 +226,20 @@ RESPONSIVE SIZES
   }
   #output {
     font-size: 104px;
+  }
+}
+
+/*Desktop Large*/
+@media screen and (min-width: 1440px) {
+  header {
+    font-size: 100px;
+    margin-bottom: 100px;
+  }
+  #pitch-pipe {
+    height: 560px;
+    width: 560px;
+  }
+  #output {
+    font-size: 120px;
   }
 }
