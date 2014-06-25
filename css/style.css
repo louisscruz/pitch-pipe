@@ -52,7 +52,7 @@ GENERAL
 header {
   color: #3d3d3d;
   line-height: 0.8;
-  font-size: 56px;
+  font-size: 42px;
   margin-right: 0;
   margin-bottom: 48px;
   position: relative;
@@ -159,7 +159,7 @@ RESPONSIVE SIZES
 /*Small Tablet Portrait*/
 @media screen and (min-width: 480px) and (orientation: portrait) {
   header {
-    font-size: 68px;
+    font-size: 60px;
   }
 
   #pitch-pipe {
@@ -172,6 +172,10 @@ RESPONSIVE SIZES
   }
 }
 @media screen and (min-width: 640px) and (orientation: landscape) {
+  header {
+    font-size: 60px;
+  }
+
   #pitch-pipe {
     height: 210px;
     width: 210px;
