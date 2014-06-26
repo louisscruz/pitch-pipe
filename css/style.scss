@@ -2,8 +2,8 @@
 SCSS VARIABLES
 =================*/
 $primary-color: #33AD5C;
-$secondary-color: #3d3d3d;
-$background-color: #bdbdbd;
+$secondary-color: #4A4A4A;
+$background-color: #BDBDBD;
 $sel-bg-color: red;
 $glow-start-shadow: 4px;
 $glow-end-shadow: 24px;
@@ -27,6 +27,16 @@ body {
 }
 ::selection {
   background-color: $sel-bg-color;
+}
+@font-face {
+    font-family: 'accidentals';
+    src: url('accidentals-webfont.eot');
+    src: url('accidentals-webfont.eot?#iefix') format('embedded-opentype'),
+         url('accidentals-webfont.woff') format('woff'),
+         url('accidentals-webfont.ttf') format('truetype'),
+         url('accidentals-webfont.svg#accidentalsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*=================
@@ -100,12 +110,12 @@ header b {
 
 .flat {
   font-size: 22px;
-  font-family: Arial, Verdana, sans-serif;
+  font-family: accidentals, Verdana, sans-serif;
 }
 
 .sharp {
   font-size: 24px;
-  font-family: Arial, Verdana, sans-serif;
+  font-family: accidentals, Verdana, sans-serif;
 }
 
 /*Selector*/
@@ -142,7 +152,7 @@ header b {
 }
 #output b {
   font-size: 0.5em;
-  font-family: Arial, Verdana, sans-serif;
+  font-family: accidentals, Verdana, sans-serif;
 }
 #output-circle:hover {
   background-color: $primary-color;

@@ -23,6 +23,14 @@ body {
   background-color: red;
 }
 
+@font-face {
+  font-family: 'accidentals';
+  src: url("accidentals-webfont.eot");
+  src: url("accidentals-webfont.eot?#iefix") format("embedded-opentype"), url("accidentals-webfont.woff") format("woff"), url("accidentals-webfont.ttf") format("truetype"), url("accidentals-webfont.svg#accidentalsregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*=================
 LAYOUT
 =================*/
@@ -49,7 +57,7 @@ GENERAL
 =================*/
 /*Pitch Pipe*/
 header {
-  color: #3d3d3d;
+  color: #4a4a4a;
   line-height: 0.8;
   font-size: 42px;
   margin-right: 0;
@@ -82,7 +90,7 @@ header b {
 }
 
 #svg-circle {
-  fill: #3d3d3d;
+  fill: #4a4a4a;
 }
 
 #pitch-pipe text {
@@ -93,12 +101,12 @@ header b {
 
 .flat {
   font-size: 22px;
-  font-family: Arial, Verdana, sans-serif;
+  font-family: accidentals, Verdana, sans-serif;
 }
 
 .sharp {
   font-size: 24px;
-  font-family: Arial, Verdana, sans-serif;
+  font-family: accidentals, Verdana, sans-serif;
 }
 
 /*Selector*/
@@ -137,7 +145,7 @@ header b {
 
 #output b {
   font-size: 0.5em;
-  font-family: Arial, Verdana, sans-serif;
+  font-family: accidentals, Verdana, sans-serif;
 }
 
 #output-circle:hover {
@@ -228,11 +236,11 @@ CSS3 ANIMATIONS
 /*Active Output Effect*/
 @-moz-keyframes vanish {
   0% {
-    background-color: #3d3d3d;
+    background-color: #4a4a4a;
   }
 
   50% {
-    background-color: #3d3d3d;
+    background-color: #4a4a4a;
   }
 
   100% {
@@ -242,11 +250,11 @@ CSS3 ANIMATIONS
 
 @-webkit-keyframes vanish {
   0% {
-    background-color: #3d3d3d;
+    background-color: #4a4a4a;
   }
 
   50% {
-    background-color: #3d3d3d;
+    background-color: #4a4a4a;
   }
 
   100% {
@@ -256,11 +264,11 @@ CSS3 ANIMATIONS
 
 @keyframes vanish {
   0% {
-    background-color: #3d3d3d;
+    background-color: #4a4a4a;
   }
 
   50% {
-    background-color: #3d3d3d;
+    background-color: #4a4a4a;
   }
 
   100% {

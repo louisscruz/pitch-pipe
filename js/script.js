@@ -47,6 +47,12 @@ $(function($) {
     });
 
     //ANIMATIONS
+    $("#output-circle").mouseenter(function() {
+        $(this).removeClass("button");
+    });
+    $("#output-circle").mouseleave(function() {
+        $(this).addClass("button");
+    });
     $("#output-circle").click(function() {
         $("#pitch-pipe").animate({  borderSpacing: -1080 }, {
             step: function(now,fx) {
@@ -62,7 +68,7 @@ $(function($) {
 
     //AUDIO FUNCTIONALITY
 
-    $("#output-circle").click(function() {
+    /*$("#output-circle").click(function() {
         if(knobValue==1) {
           $("#Cs")[0].play();
         } else if(knobValue==2) {
@@ -88,6 +94,6 @@ $(function($) {
         } else {
           $("#C")[0].play();
         }
-    });
+    });*/
 
 });
