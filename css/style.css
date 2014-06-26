@@ -185,43 +185,43 @@ CSS3 ANIMATIONS
 /*Glow Effect*/
 @-moz-keyframes glow {
   0% {
-    box-shadow: 0 0 0px;
+    box-shadow: 0 0 4px;
   }
 
   50% {
-    box-shadow: 0 0 20px #33ad5c;
+    box-shadow: 0 0 24px #33ad5c;
   }
 
   100% {
-    box-shadow: 0 0 0px;
+    box-shadow: 0 0 4px;
   }
 }
 
 @-webkit-keyframes glow {
   0% {
-    box-shadow: 0 0 0px;
+    box-shadow: 0 0 4px;
   }
 
   50% {
-    box-shadow: 0 0 20px #33ad5c;
+    box-shadow: 0 0 24px #33ad5c;
   }
 
   100% {
-    box-shadow: 0 0 0px;
+    box-shadow: 0 0 4px;
   }
 }
 
 @keyframes glow {
   0% {
-    box-shadow: 0 0 0px;
+    box-shadow: 0 0 4px;
   }
 
   50% {
-    box-shadow: 0 0 20px #33ad5c;
+    box-shadow: 0 0 24px #33ad5c;
   }
 
   100% {
-    box-shadow: 0 0 0px;
+    box-shadow: 0 0 4px;
   }
 }
 
