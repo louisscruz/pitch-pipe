@@ -62,7 +62,7 @@ $(function($) {
 
     //AUDIO FUNCTIONALITY
 
-    /*$("#output-circle").click(function() {
+    $("#output-circle").click(function() {
         if(knobValue==1) {
           $("#Cs")[0].play();
         } else if(knobValue==2) {
@@ -88,6 +88,6 @@ $(function($) {
         } else {
           $("#C")[0].play();
         }
-    });*/
+    });
 
 });
