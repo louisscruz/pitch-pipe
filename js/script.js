@@ -47,8 +47,9 @@ $(function($) {
     });
 
     //ANIMATIONS
-    
+
     $("#output-circle").click(function() {
+        status == 1;
         $(this).animate({
           backgroundColor: "#bdbdbd",
           color: "#fff"
@@ -63,6 +64,7 @@ $(function($) {
             },
             duration: 2000
         },'swing');
+        status == 0;
     });
 
     //AUDIO FUNCTIONALITY
