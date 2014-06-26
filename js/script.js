@@ -64,6 +64,7 @@ $(function($) {
             },
             duration: 2000
         },'swing');
+        $(this)
     });
 
     //AUDIO FUNCTIONALITY

@@ -20,7 +20,7 @@ body {
 }
 
 ::selection {
-  background-color: red;
+  background-color: #ff2000;
 }
 
 @font-face {
@@ -94,6 +94,7 @@ header b {
 }
 
 #pitch-pipe text {
+  color: #33ad5c;
   font-family: "Oleo Script", sans-serif;
   font-size: 32px;
   font-weight: bold;
@@ -193,43 +194,43 @@ CSS3 ANIMATIONS
 /*Glow Effect*/
 @-moz-keyframes glow {
   0% {
-    box-shadow: 0 0 4px;
+    box-shadow: 0 0 5px;
   }
 
   50% {
-    box-shadow: 0 0 24px #33ad5c;
+    box-shadow: 0 0 30px #33ad5c;
   }
 
   100% {
-    box-shadow: 0 0 4px;
+    box-shadow: 0 0 5px;
   }
 }
 
 @-webkit-keyframes glow {
   0% {
-    box-shadow: 0 0 4px;
+    box-shadow: 0 0 5px;
   }
 
   50% {
-    box-shadow: 0 0 24px #33ad5c;
+    box-shadow: 0 0 30px #33ad5c;
   }
 
   100% {
-    box-shadow: 0 0 4px;
+    box-shadow: 0 0 5px;
   }
 }
 
 @keyframes glow {
   0% {
-    box-shadow: 0 0 4px;
+    box-shadow: 0 0 5px;
   }
 
   50% {
-    box-shadow: 0 0 24px #33ad5c;
+    box-shadow: 0 0 30px #33ad5c;
   }
 
   100% {
-    box-shadow: 0 0 4px;
+    box-shadow: 0 0 5px;
   }
 }
 
@@ -365,32 +366,36 @@ RESPONSIVE SIZES
 /*Desktop*/
 @media screen and (min-width: 1200px) {
   header {
-    font-size: 100px;
-    margin-bottom: 100px;
+    font-size: 80px;
+    margin-bottom: 80px;
+    float: left;
+    margin-left: 0px;
+    margin-top: 5%;
   }
 
   #pitch-pipe {
-    height: 480px;
-    width: 480px;
+    float: right;
+    height: 380px;
+    width: 380px;
   }
 
   #output {
-    font-size: 104px;
+    font-size: 82px;
   }
 }
 /*Desktop Large*/
 @media screen and (min-width: 1440px) {
   header {
-    font-size: 100px;
-    margin-bottom: 100px;
+    font-size: 90px;
+    margin-bottom: 90px;
   }
 
   #pitch-pipe {
-    height: 560px;
-    width: 560px;
+    height: 420px;
+    width: 420px;
   }
 
   #output {
-    font-size: 120px;
+    font-size: 92px;
   }
 }

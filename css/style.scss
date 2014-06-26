@@ -4,9 +4,9 @@ SCSS VARIABLES
 $primary-color: #33AD5C;
 $secondary-color: #4A4A4A;
 $background-color: #BDBDBD;
-$sel-bg-color: red;
-$glow-start-shadow: 4px;
-$glow-end-shadow: 24px;
+$sel-bg-color: #FF2000;
+$glow-start-shadow: 5px;
+$glow-end-shadow: 30px;
 
 /*=================
 GENERAL
@@ -103,6 +103,7 @@ header b {
 }
 
 #pitch-pipe text {
+  color: $primary-color;
   font-family: "Oleo Script", sans-serif;
   font-size: 32px;
   font-weight: bold;
@@ -359,29 +360,33 @@ RESPONSIVE SIZES
 /*Desktop*/
 @media screen and (min-width: 1200px) {
   header {
-    font-size: 100px;
-    margin-bottom: 100px;
+    font-size: 80px;
+    margin-bottom: 80px;
+    float: left;
+    margin-left: 0px;
+    margin-top: 5%;
   }
   #pitch-pipe {
-    height: 480px;
-    width: 480px;
+    float: right;
+    height: 380px;
+    width: 380px;
   }
   #output {
-    font-size: 104px;
+    font-size: 82px;
   }
 }
 
 /*Desktop Large*/
 @media screen and (min-width: 1440px) {
   header {
-    font-size: 100px;
-    margin-bottom: 100px;
+    font-size: 90px;
+    margin-bottom: 90px;
   }
   #pitch-pipe {
-    height: 560px;
-    width: 560px;
+    height: 420px;
+    width: 420px;
   }
   #output {
-    font-size: 120px;
+    font-size: 92px;
   }
 }
