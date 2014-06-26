@@ -47,13 +47,7 @@ $(function($) {
     });
 
     //ANIMATIONS
-
     $("#output-circle").click(function() {
-        status == 1;
-        $(this).animate({
-          backgroundColor: "#bdbdbd",
-          color: "#fff"
-        }, 1000 ),
         $("#pitch-pipe").animate({  borderSpacing: -1080 }, {
             step: function(now,fx) {
               $(this).css('-webkit-transform','rotate('+now+'deg)');
@@ -64,12 +58,11 @@ $(function($) {
             },
             duration: 2000
         },'swing');
-        status == 0;
     });
 
     //AUDIO FUNCTIONALITY
 
-    $("#output-circle").click(function() {
+    /*$("#output-circle").click(function() {
         if(knobValue==1) {
           $("#Cs")[0].play();
         } else if(knobValue==2) {
@@ -95,6 +88,6 @@ $(function($) {
         } else {
           $("#C")[0].play();
         }
-    });
+    });*/
 
 });
