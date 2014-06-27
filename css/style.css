@@ -4,11 +4,12 @@ SCSS VARIABLES
 /*=================
 GENERAL
 =================*/
-html {
+html, body {
   height: 100%;
-  width: 100%;
   margin: 0;
   overflow: hidden;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -17,9 +18,6 @@ body {
   background-repeat: repeat;
   color: #33ad5c;
   font-family: "Oleo Script", sans-serif;
-  height: 100%;
-  margin: 0;
-  min-width: 320px;
 }
 
 ::selection {
