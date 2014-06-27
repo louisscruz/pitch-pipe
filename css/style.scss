@@ -186,7 +186,7 @@ footer {
   bottom: 0;
   color: white;
   font-family: "Oswald", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   height: 26px;
   padding: 0px;
   position: absolute;
@@ -201,7 +201,8 @@ footer > span, footer > form {
   vertical-align: middle;
 }
 .copyright {
-  vertical-align: -1px;
+  font-size: 10px;
+  vertical-align: -3px;
 }
 .pp button {
     -webkit-appearance:none;
@@ -212,11 +213,12 @@ footer > span, footer > form {
     color:inherit;
     display:inline-block;
     background:$secondary-color;
-    padding:0 20px;
+    padding:0 5px;
     text-decoration:none;
     color:#f9f6f2;
     height:100%;
     cursor:pointer;
+    vertical-align: middle;
 }
 
 .pp button:hover {
@@ -236,11 +238,11 @@ footer > span, footer > form {
     margin-left:10px;
     display:inline-block;
     background:$secondary-color;
-    padding:0 10px;
+    padding:0 5px;
     text-decoration:none;
     color:#fff;
     height:100%;
-    cursor:pointer
+    cursor:pointer;
 }
 
 .btc:hover {
@@ -256,9 +258,9 @@ footer > span, footer > form {
 }
 
 .btc a {
-    color:#f9f6f2;
+    color:#fff;
     text-decoration:none;
-    vertical-align: middle;
+    vertical-align: -4px;
 }
 
 .btc .address {
@@ -287,7 +289,7 @@ footer > span, footer > form {
 
 .btc:hover .address,.btc .address:hover .address,.address:hover {
     opacity:1;
-    top:-28px;
+    top:-30px;
     pointer-events: auto;
 }
 
