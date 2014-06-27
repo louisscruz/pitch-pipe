@@ -185,6 +185,7 @@ footer {
   font-family: "Oswald", sans-serif;
   font-size: 12px;
   height: 26px;
+  overflow: hidden;
   overflow-x: hidden;
   padding: 0px;
   position: absolute;
