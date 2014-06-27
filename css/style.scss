@@ -12,11 +12,11 @@ $glow-end-shadow: 30px;
 GENERAL
 =================*/
 html, body {
-  height: 100%;
+  height: auto;
   margin: 0;
   overflow: hidden;
   overflow-x: hidden;
-  width: 100%;
+  width: auto;
 }
 body {
   background: $background-color;

@@ -5,11 +5,11 @@ SCSS VARIABLES
 GENERAL
 =================*/
 html, body {
-  height: 100%;
+  height: auto;
   margin: 0;
   overflow: hidden;
   overflow-x: hidden;
-  width: 100%;
+  width: auto;
 }
 
 body {
