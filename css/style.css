@@ -5,7 +5,6 @@ SCSS VARIABLES
 GENERAL
 =================*/
 html {
-  height: 100%;
   width: 100%;
   margin: 0;
 }
@@ -17,8 +16,6 @@ body {
   color: #33ad5c;
   font-family: "Oleo Script", sans-serif;
   margin: 0;
-  min-height: 100%;
-  overflow: hidden;
   padding: 0;
   width: 100%;
 }
