@@ -55,7 +55,6 @@ LAYOUT
 /*=================
 GENERAL
 =================*/
-/*Advertisements*/
 /*Pitch Pipe*/
 header {
   color: #4a4a4a;
@@ -177,16 +176,118 @@ header b {
   animation-iteration-count: infinite;
 }
 
-#output.active {
-  -moz-animation-name: vanish;
-  -moz-animation-duration: 2s;
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-name: vanish;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: 1;
-  animation-name: vanish;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
+/*Footer*/
+footer {
+  background-color: #4a4a4a;
+  bottom: 0;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 13px;
+  height: 26px;
+  padding: 0px;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+footer > span, footer > form {
+  display: inline-block;
+  height: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.copyright {
+  vertical-align: -1px;
+}
+
+.pp button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  display: inline-block;
+  background: #4a4a4a;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 100%;
+  cursor: pointer;
+}
+
+.pp button:hover {
+  background-color: #33ad5c;
+  -webkit-transition: 400ms ease;
+  -moz-transition: 400ms ease;
+  transition: 400ms ease;
+}
+
+.pp button img {
+  vertical-align: -4px;
+  margin-right: 8px;
+}
+
+.btc {
+  position: relative;
+  margin-left: 10px;
+  display: inline-block;
+  background: #4a4a4a;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  height: 100%;
+  cursor: pointer;
+}
+
+.btc:hover {
+  background-color: #33ad5c;
+  -webkit-transition: 400ms ease;
+  -moz-transition: 400ms ease;
+  transition: 400ms ease;
+}
+
+.btc img {
+  vertical-align: -5px;
+  margin-left: 8px;
+}
+
+.btc a {
+  color: #f9f6f2;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.btc .address {
+  cursor: auto;
+  position: absolute;
+  width: 340px;
+  right: 110%;
+  margin-right: -170px;
+  padding-bottom: 7px;
+  top: -30px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 400ms ease;
+  -moz-transition: 400ms ease;
+  transition: 400ms ease;
+}
+
+.btc .address code {
+  background-color: #33ad5c;
+  font-size: 10px;
+  font-family: Courier,monospace;
+  padding: 10px 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.btc:hover .address, .btc .address:hover .address, .address:hover {
+  opacity: 1;
+  top: -28px;
+  pointer-events: auto;
 }
 
 /*=================
@@ -232,49 +333,6 @@ CSS3 ANIMATIONS
 
   100% {
     box-shadow: 0 0 5px;
-  }
-}
-
-/*Active Output Effect*/
-@-moz-keyframes vanish {
-  0% {
-    background-color: #4a4a4a;
-  }
-
-  50% {
-    background-color: #4a4a4a;
-  }
-
-  100% {
-    background-color: white;
-  }
-}
-
-@-webkit-keyframes vanish {
-  0% {
-    background-color: #4a4a4a;
-  }
-
-  50% {
-    background-color: #4a4a4a;
-  }
-
-  100% {
-    background-color: white;
-  }
-}
-
-@keyframes vanish {
-  0% {
-    background-color: #4a4a4a;
-  }
-
-  50% {
-    background-color: #4a4a4a;
-  }
-
-  100% {
-    background-color: white;
   }
 }
 
