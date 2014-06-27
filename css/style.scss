@@ -24,6 +24,9 @@ body {
   background-repeat: repeat;
   color: $primary-color;
   font-family: "Oleo Script", sans-serif;
+  position: fixed;
+  top:0;
+  bottom:0;
 }
 ::selection {
   background-color: $sel-bg-color;
