@@ -192,7 +192,6 @@ footer {
   font-size: 12px;
   height: 26px;
   overflow:hidden;
-  overflow-x:hidden;
   padding: 0px;
   position: absolute;
   text-align: center;
@@ -292,7 +291,7 @@ footer > span, footer > form {
     text-align:center
 }
 
-.btc:hover .address,.btc .address:hover .address,.address:hover {
+.btc:hover .address,.btc .address:hover .address {
     opacity:1;
     top:-26px;
     pointer-events: auto;
