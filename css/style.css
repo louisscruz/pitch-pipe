@@ -1,7 +1,4 @@
 /*=================
-SCSS VARIABLES
-=================*/
-/*=================
 GENERAL
 =================*/
 html, body {
@@ -16,11 +13,11 @@ body {
   background: #bdbdbd;
   background-image: url(/img/bg.png);
   background-repeat: repeat;
+  bottom: 0;
   color: #33ad5c;
   font-family: "Oleo Script", sans-serif;
   position: fixed;
   top: 0;
-  bottom: 0;
 }
 
 ::selection {
@@ -31,8 +28,8 @@ body {
   font-family: 'accidentals';
   src: url("accidentals-webfont.eot");
   src: url("accidentals-webfont.eot?#iefix") format("embedded-opentype"), url("accidentals-webfont.woff") format("woff"), url("accidentals-webfont.ttf") format("truetype"), url("accidentals-webfont.svg#accidentalsregular") format("svg");
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
 }
 
 /*=================
@@ -57,8 +54,9 @@ LAYOUT
 }
 
 /*=================
-GENERAL
+CONTENT
 =================*/
+/*Top*/
 #twitter {
   margin-left: 8px;
   margin-top: 8px;
@@ -69,15 +67,14 @@ GENERAL
 /*Pitch Pipe*/
 header {
   color: #4a4a4a;
-  line-height: 0.8;
   font-size: 42px;
+  line-height: 0.8;
   margin-right: 0;
   margin-bottom: 48px;
   position: relative;
   text-align: center;
   text-shadow: 4px 4px #33ad5c;
 }
-
 header b {
   font-size: 30%;
 }
@@ -112,13 +109,13 @@ header b {
 }
 
 .flat {
-  font-size: 22px;
   font-family: accidentals, Verdana, sans-serif;
+  font-size: 22px;
 }
 
 .sharp {
-  font-size: 24px;
   font-family: accidentals, Verdana, sans-serif;
+  font-size: 24px;
 }
 
 /*Selector*/
@@ -141,6 +138,14 @@ header b {
   width: 50%;
 }
 
+#output-circle:hover {
+  background-color: #33ad5c;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: 0.5s;
+}
+
 #output {
   color: #33ad5c;
   font-family: "Oswald", sans-serif;
@@ -154,18 +159,9 @@ header b {
   text-align: center;
   width: 100%;
 }
-
 #output b {
-  font-size: 0.5em;
   font-family: accidentals, Verdana, sans-serif;
-}
-
-#output-circle:hover {
-  background-color: #33ad5c;
-  -webkit-transition: 0.5s;
-  /* For Safari 3.1 to 6.0 */
-  transition: 0.5s;
-  cursor: pointer;
+  font-size: 0.5em;
 }
 
 #output:hover {
@@ -218,41 +214,69 @@ footer > span, footer > form {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: none;
-  font: inherit;
-  color: inherit;
-  display: inline-block;
   background: #4a4a4a;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font: inherit;
+  height: 100%;
   padding: 0 5px;
   text-decoration: none;
-  color: #f9f6f2;
-  height: 100%;
-  cursor: pointer;
   vertical-align: middle;
 }
-
 .pp button:hover {
   background-color: #33ad5c;
   -webkit-transition: 400ms ease;
   -moz-transition: 400ms ease;
   transition: 400ms ease;
 }
-
 .pp button img {
   vertical-align: -4px;
   margin-right: 8px;
 }
 
 .btc {
-  position: relative;
-  margin-left: 10px;
-  display: inline-block;
   background: #4a4a4a;
-  padding: 0 5px;
-  text-decoration: none;
   color: #fff;
-  height: 100%;
   cursor: pointer;
+  display: inline-block;
+  height: 100%;
+  margin-left: 10px;
+  padding: 0 5px;
+  position: relative;
+  text-decoration: none;
+}
+.btc img {
+  margin-left: 8px;
+  vertical-align: -4px;
+}
+.btc a {
+  color: #fff;
+  text-decoration: none;
+  vertical-align: -5px;
+}
+.btc .address {
+  cursor: auto;
+  margin-right: -170px;
+  opacity: 0;
+  padding-bottom: 7px;
+  pointer-events: none;
+  position: absolute;
+  right: 127%;
+  -webkit-transition: 400ms ease;
+  -moz-transition: 400ms ease;
+  transition: 400ms ease;
+  top: -30px;
+  width: 340px;
+}
+.btc .address code {
+  background-color: #33ad5c;
+  font-family: Courier,monospace;
+  font-size: 10px;
+  padding: 10px 15px;
+  text-align: center;
+  width: 100%;
 }
 
 .btc:hover {
@@ -262,45 +286,10 @@ footer > span, footer > form {
   transition: 400ms ease;
 }
 
-.btc img {
-  vertical-align: -4px;
-  margin-left: 8px;
-}
-
-.btc a {
-  color: #fff;
-  text-decoration: none;
-  vertical-align: -5px;
-}
-
-.btc .address {
-  cursor: auto;
-  position: absolute;
-  width: 340px;
-  right: 127%;
-  margin-right: -170px;
-  padding-bottom: 7px;
-  top: -30px;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: 400ms ease;
-  -moz-transition: 400ms ease;
-  transition: 400ms ease;
-}
-
-.btc .address code {
-  background-color: #33ad5c;
-  font-size: 10px;
-  font-family: Courier,monospace;
-  padding: 10px 15px;
-  width: 100%;
-  text-align: center;
-}
-
 .btc:hover .address, .btc .address:hover .address {
   opacity: 1;
-  top: -26px;
   pointer-events: auto;
+  top: -26px;
 }
 
 /*=================
@@ -396,8 +385,8 @@ RESPONSIVE SIZES
 /*Set Margins for Tablet and Larger*/
 @media screen and (min-width: 640px) {
   #selector {
-    margin-top: -111.85%;
     margin-left: -11.81%;
+    margin-top: -111.85%;
   }
 
   #output-circle {

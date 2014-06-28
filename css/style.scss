@@ -1,17 +1,19 @@
-/*=================
-SCSS VARIABLES
-=================*/
 $primary-color: #33AD5C;
 $secondary-color: #4A4A4A;
 $background-color: #BDBDBD;
 $sel-bg-color: #FF2000;
+
+$title-font: "Oleo Script", sans-serif;
+$primary-font: "Oswald", sans-serif;
+
+
 $glow-start-shadow: 5px;
 $glow-end-shadow: 30px;
 
 /*=================
 GENERAL
 =================*/
-html, body {
+html {
   height: 100%;
   margin: 0;
   overflow: hidden;
@@ -19,27 +21,28 @@ html, body {
   width: 100%;
 }
 body {
+  @extend html;
   background: $background-color;
   background-image: url(/img/bg.png);
   background-repeat: repeat;
+  bottom:0;
   color: $primary-color;
-  font-family: "Oleo Script", sans-serif;
+  font-family: $title-font;
   position: fixed;
   top:0;
-  bottom:0;
 }
 ::selection {
   background-color: $sel-bg-color;
 }
 @font-face {
-    font-family: 'accidentals';
-    src: url('accidentals-webfont.eot');
-    src: url('accidentals-webfont.eot?#iefix') format('embedded-opentype'),
-         url('accidentals-webfont.woff') format('woff'),
-         url('accidentals-webfont.ttf') format('truetype'),
-         url('accidentals-webfont.svg#accidentalsregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'accidentals';
+  src: url('accidentals-webfont.eot');
+  src: url('accidentals-webfont.eot?#iefix') format('embedded-opentype'),
+       url('accidentals-webfont.woff') format('woff'),
+       url('accidentals-webfont.ttf') format('truetype'),
+       url('accidentals-webfont.svg#accidentalsregular') format('svg');
+  font-style: normal;
+  font-weight: normal;
 }
 
 /*=================
@@ -63,8 +66,10 @@ LAYOUT
 }
 
 /*=================
-GENERAL
+CONTENT
 =================*/
+
+/*Top*/
 #twitter {
   margin-left: 8px;
   margin-top: 8px;
@@ -73,20 +78,18 @@ GENERAL
 }
 
 /*Pitch Pipe*/
-
 header {
   color: $secondary-color;
-  line-height: 0.8;
   font-size: 42px;
+  line-height: 0.8;
   margin-right: 0;
   margin-bottom: 48px;
   position: relative;
   text-align: center;
   text-shadow: 4px 4px $primary-color;
-}
-
-header b {
-  font-size: 30%;
+  b {
+    font-size: 30%;
+  }
 }
 
 /*Main*/
@@ -106,26 +109,22 @@ header b {
   margin-right: auto;
   width: 100%;
 }
-
 #svg-circle {
   fill: $secondary-color;
 }
-
 #pitch-pipe text {
   color: $primary-color;
-  font-family: "Oleo Script", sans-serif;
+  font-family: $title-font;
   font-size: 32px;
   font-weight: 400;
 }
-
 .flat {
+  font-family: accidentals, Verdana, sans-serif;
   font-size: 22px;
-  font-family: accidentals, Verdana, sans-serif;
 }
-
 .sharp {
-  font-size: 24px;
   font-family: accidentals, Verdana, sans-serif;
+  font-size: 24px;
 }
 
 /*Selector*/
@@ -147,9 +146,15 @@ header b {
   position: absolute;
   width: 50%;
 }
+#output-circle:hover {
+  background-color: $primary-color;
+  cursor: pointer;
+  -webkit-transition: 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: 0.5s;
+}
 #output {
   color: $primary-color;
-  font-family: "Oswald", sans-serif;
+  font-family: $primary-font;
   font-size: 36px;
   font-weight: 700;
   height: 100%;
@@ -159,16 +164,10 @@ header b {
   position: absolute;
   text-align: center;
   width: 100%;
-}
-#output b {
-  font-size: 0.5em;
-  font-family: accidentals, Verdana, sans-serif;
-}
-#output-circle:hover {
-  background-color: $primary-color;
-  -webkit-transition: 0.5s; /* For Safari 3.1 to 6.0 */
-  transition: 0.5s;
-  cursor: pointer;
+  b {
+    font-family: accidentals, Verdana, sans-serif;
+    font-size: 0.5em;
+  }
 }
 #output:hover{
   color: white;
@@ -194,7 +193,7 @@ footer {
   background-color: $secondary-color;
   bottom: 0;
   color: white;
-  font-family: "Oswald", sans-serif;
+  font-family: $primary-font;
   font-size: 12px;
   height: 26px;
   padding: 0px;
@@ -213,93 +212,85 @@ footer > span, footer > form {
   font-size: 10px;
   vertical-align: -3px;
 }
-.pp button {
+.pp {
+  button {
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
-    border:none;
-    font:inherit;
-    color:inherit;
-    display:inline-block;
     background:$secondary-color;
+    border:none;
+    color:inherit;
+    cursor:pointer;
+    display:inline-block;
+    font:inherit;
+    height:100%;
     padding:0 5px;
     text-decoration:none;
-    color:#f9f6f2;
-    height:100%;
-    cursor:pointer;
     vertical-align: middle;
-}
-
-.pp button:hover {
-  background-color:$primary-color;
-  -webkit-transition:400ms ease;
-  -moz-transition:400ms ease;
-  transition:400ms ease;
-}
-
-.pp button img {
+  }
+  button:hover {
+    background-color:$primary-color;
+    -webkit-transition:400ms ease;
+    -moz-transition:400ms ease;
+    transition:400ms ease;
+  }
+  button img {
     vertical-align:-4px;
     margin-right:8px
+  }
 }
-
 .btc {
-    position:relative;
-    margin-left:10px;
-    display:inline-block;
-    background:$secondary-color;
-    padding:0 5px;
-    text-decoration:none;
+  background:$secondary-color;
+  color:#fff;
+  cursor:pointer;
+  display:inline-block;
+  height:100%;
+  margin-left:10px;
+  padding:0 5px;
+  position:relative;
+  text-decoration:none;
+  img {
+    margin-left:8px;
+    vertical-align:-4px;
+  }
+  a {
     color:#fff;
-    height:100%;
-    cursor:pointer;
+    text-decoration:none;
+    vertical-align: -5px;
+  }
+  .address {
+    cursor:auto;
+    margin-right:-170px;
+    opacity:0;
+    padding-bottom:7px;
+    pointer-events:none;
+    position:absolute;
+    right:127%;
+    -webkit-transition:400ms ease;
+    -moz-transition:400ms ease;
+    transition:400ms ease;
+    top:-30px;
+    width:340px;
+  }
+  .address code {
+    background-color:$primary-color;
+    font-family:Courier,monospace;
+    font-size:10px;
+    padding:10px 15px;
+    text-align:center;
+    width:100%;
+  }
 }
-
 .btc:hover {
   background-color:$primary-color;
   -webkit-transition:400ms ease;
   -moz-transition:400ms ease;
   transition:400ms ease;
 }
-
-.btc img {
-    vertical-align:-4px;
-    margin-left:8px
-}
-
-.btc a {
-    color:#fff;
-    text-decoration:none;
-    vertical-align: -5px;
-}
-
-.btc .address {
-    cursor:auto;
-    position:absolute;
-    width:340px;
-    right:127%;
-    margin-right:-170px;
-    padding-bottom:7px;
-    top:-30px;
-    opacity:0;
-    pointer-events:none;
-    -webkit-transition:400ms ease;
-    -moz-transition:400ms ease;
-    transition:400ms ease;
-}
-
-.btc .address code {
-    background-color:$primary-color;
-    font-size:10px;
-    font-family:Courier,monospace;
-    padding:10px 15px;
-    width:100%;
-    text-align:center
-}
-
 .btc:hover .address,.btc .address:hover .address {
-    opacity:1;
-    top:-26px;
-    pointer-events: auto;
+  opacity:1;
+  pointer-events: auto;
+  top:-26px;
 }
 
 /*=================
@@ -307,7 +298,6 @@ CSS3 ANIMATIONS
 =================*/
 
 /*Glow Effect*/
-
 @-moz-keyframes glow {
   0% {
     box-shadow: 0 0 $glow-start-shadow;
@@ -319,7 +309,6 @@ CSS3 ANIMATIONS
     box-shadow: 0 0 $glow-start-shadow;
   }
 }
-
 @-webkit-keyframes glow {
   0% {
     box-shadow: 0 0 $glow-start-shadow;
@@ -331,7 +320,6 @@ CSS3 ANIMATIONS
     box-shadow: 0 0 $glow-start-shadow;
   }
 }
-
 @keyframes glow {
   0% {
     box-shadow: 0 0 $glow-start-shadow;
@@ -349,7 +337,6 @@ RESPONSIVE SIZES
 =================*/
 
 /*Set landscape*/
-
 @media screen and (max-width: 1199px) and (orientation: landscape) {
   header {
     float: left;
@@ -374,7 +361,6 @@ RESPONSIVE SIZES
     font-size: 52px;
   }
 }
-
 @media screen and (min-width: 640px) and (orientation: landscape) {
   header {
     font-size: 60epx;
@@ -391,8 +377,8 @@ RESPONSIVE SIZES
 /*Set Margins for Tablet and Larger*/
 @media screen and (min-width: 640px) {
   #selector {
-    margin-top: -111.85%;
     margin-left: -11.81%;
+    margin-top: -111.85%;
   }
   #output-circle {
     margin-left: 25%;
@@ -414,7 +400,6 @@ RESPONSIVE SIZES
     font-size: 78px;
   }
 }
-
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   header {
     font-size: 80px;
