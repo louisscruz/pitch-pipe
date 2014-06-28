@@ -4,29 +4,25 @@ SCSS VARIABLES
 /*=================
 GENERAL
 =================*/
-html, body {
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-  overflow-x: hidden;
-  width: 100%;
-}
-
+html,
 body {
-  background: #bdbdbd;
-  background-image: url(/img/bg.png);
-  background-repeat: repeat;
-  color: #33ad5c;
-  font-family: "Oleo Script", sans-serif;
-  position: fixed;
-  top: 0;
-  bottom: 0;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    width: 100%;
 }
-
-::selection {
-  background-color: #ff2000;
+body {
+    background: #bdbdbd;
+    background-image: url(/img/bg.png);
+    background-repeat: repeat;
+    color: #33ad5c;
+    font-family: "Oleo Script", sans-serif;
+    position: fixed;
+    top: 0;
+    bottom: 0;
 }
-
+::selection { background-color: #ff2000 }
 @font-face {
   font-family: 'accidentals';
   src: url("accidentals-webfont.eot");
@@ -301,166 +297,105 @@ CSS3 ANIMATIONS
 =================*/
 /*Glow Effect*/
 @-moz-keyframes glow {
-  0% {
-    box-shadow: 0 0 5px;
-  }
-
-  50% {
-    box-shadow: 0 0 30px #33ad5c;
-  }
-
-  100% {
-    box-shadow: 0 0 5px;
-  }
+    0% { box-shadow: 0 0 5px }
+    50% { box-shadow: 0 0 30px #33ad5c }
+    100% { box-shadow: 0 0 5px }
 }
-
 @-webkit-keyframes glow {
-  0% {
-    box-shadow: 0 0 5px;
-  }
-
-  50% {
-    box-shadow: 0 0 30px #33ad5c;
-  }
-
-  100% {
-    box-shadow: 0 0 5px;
-  }
+    0% { box-shadow: 0 0 5px }
+    50% { box-shadow: 0 0 30px #33ad5c }
+    100% { box-shadow: 0 0 5px }
 }
-
 @keyframes glow {
-  0% {
-    box-shadow: 0 0 5px;
-  }
-
-  50% {
-    box-shadow: 0 0 30px #33ad5c;
-  }
-
-  100% {
-    box-shadow: 0 0 5px;
-  }
+    0% { box-shadow: 0 0 5px }
+    50% { box-shadow: 0 0 30px #33ad5c }
+    100% { box-shadow: 0 0 5px }
 }
-
 /*=================
 RESPONSIVE SIZES
 =================*/
 /*Set landscape*/
 @media screen and (max-width: 1199px) and (orientation: landscape) {
-  header {
-    float: left;
-    margin-left: 0px;
-    margin-top: 5%;
-  }
-
-  #pitch-pipe {
-    float: right;
-  }
+    header {
+        float: left;
+        margin-left: 0px;
+        margin-top: 5%;
+    }
+    #pitch-pipe { float: right }
 }
 /*Small Tablet Portrait*/
 @media screen and (min-width: 480px) and (orientation: portrait) {
-  header {
-    font-size: 60px;
-  }
-
-  #pitch-pipe {
-    height: 240px;
-    width: 240px;
-  }
-
-  #output {
-    font-size: 52px;
-  }
+    header { font-size: 60px }
+    #pitch-pipe {
+        height: 240px;
+        width: 240px;
+    }
+    #output { font-size: 52px }
 }
 @media screen and (min-width: 640px) and (orientation: landscape) {
-  header {
-    font-size: 60epx;
-  }
-
-  #pitch-pipe {
-    height: 210px;
-    width: 210px;
-  }
-
-  #output {
-    font-size: 46px;
-  }
+    header { font-size: 60epx }
+    #pitch-pipe {
+        height: 210px;
+        width: 210px;
+    }
+    #output { font-size: 46px }
 }
 /*Set Margins for Tablet and Larger*/
 @media screen and (min-width: 640px) {
-  #selector {
-    margin-top: -111.85%;
-    margin-left: -11.81%;
-  }
-
-  #output-circle {
-    margin-left: 25%;
-    margin-top: -86.9%;
-  }
+    #selector {
+        margin-top: -111.85%;
+        margin-left: -11.81%;
+    }
+    #output-circle {
+        margin-left: 25%;
+        margin-top: -86.9%;
+    }
 }
 /*Tablet Portrait*/
 @media screen and (min-width: 640px) and (orientation: portrait) {
-  header {
-    font-size: 80px;
-    margin-bottom: 72px;
-  }
-
-  #pitch-pipe {
-    height: 360px;
-    width: 360px;
-  }
-
-  #output {
-    font-size: 78px;
-  }
+    header {
+        font-size: 80px;
+        margin-bottom: 72px;
+    }
+    #pitch-pipe {
+        height: 360px;
+        width: 360px;
+    }
+    #output { font-size: 78px }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
-  header {
-    font-size: 80px;
-  }
-
-  #pitch-pipe {
-    height: 320px;
-    width: 320px;
-  }
-
-  #output {
-    font-size: 72px;
-  }
+    header { font-size: 80px }
+    #pitch-pipe {
+        height: 320px;
+        width: 320px;
+    }
+    #output { font-size: 72px }
 }
 /*Desktop*/
 @media screen and (min-width: 1200px) {
-  header {
-    font-size: 80px;
-    margin-bottom: 80px;
-    float: left;
-    margin-left: 0px;
-    margin-top: 5%;
-  }
-
-  #pitch-pipe {
-    float: right;
-    height: 380px;
-    width: 380px;
-  }
-
-  #output {
-    font-size: 82px;
-  }
+    header {
+        font-size: 80px;
+        margin-bottom: 80px;
+        float: left;
+        margin-left: 0px;
+        margin-top: 5%;
+    }
+    #pitch-pipe {
+        float: right;
+        height: 380px;
+        width: 380px;
+    }
+    #output { font-size: 82px }
 }
 /*Desktop Large*/
 @media screen and (min-width: 1440px) {
-  header {
-    font-size: 90px;
-    margin-bottom: 90px;
-  }
-
-  #pitch-pipe {
-    height: 420px;
-    width: 420px;
-  }
-
-  #output {
-    font-size: 92px;
-  }
+    header {
+        font-size: 90px;
+        margin-bottom: 90px;
+    }
+    #pitch-pipe {
+        height: 420px;
+        width: 420px;
+    }
+    #output { font-size: 92px }
 }
