@@ -1,8 +1,12 @@
 $(function($) {
 
     //KNOB FUNCTIONS
+    $(".knob")
+      .val(9)
+      .trigger('change');
 
     $(".knob").knob({
+
         change : function (value) {
             //console.log("change : " + value);
         },
@@ -17,7 +21,6 @@ $(function($) {
         //OUTPUT FROM VALUE
 
         format : function (value) {
-          value= = 0;
           knobValue = value;
           if(value==1) {
             $("#output").html("<h2>C<b>&#x266f;</b></h2>");
