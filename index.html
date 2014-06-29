@@ -37,10 +37,15 @@
                 <path id="circlePath2" d=" M 150, 150 m -120, 0 a 120,120 0 0,1 240,0 a 120,120 0 0,1 -240,0 "/>
               </defs>
               <circle id="svg-circle" cx="150" cy="150" r="150"/>
+              <g transform="rotate(-5 150 150)">
+                <use xlink:href="#circlePath2" fill="none"/>
+                <text fill="#fff">
+                  <textPath xlink:href="#circlePath">A</textPath>
+                </text>
+              </g>
               <g>
                 <use xlink:href="#circlePath" fill="none"/>
                 <text fill="#fff">
-                  <textPath xlink:href="#circlePath" startOffset="0">A</textPath>
                   <textPath xlink:href="#circlePath" startOffset="6%">B</textPath>
                   <textPath xlink:href="#circlePath" startOffset="8%"class="flat">&#x266d;</textPath>
                   <textPath xlink:href="#circlePath" startOffset="15%">B</textPath>
