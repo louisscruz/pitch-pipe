@@ -17,6 +17,7 @@ $(function($) {
         //OUTPUT FROM VALUE
 
         format : function (value) {
+          value= = 0;
           knobValue = value;
           if(value==1) {
             $("#output").html("<h2>C<b>&#x266f;</b></h2>");
