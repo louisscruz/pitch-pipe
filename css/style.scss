@@ -175,13 +175,17 @@ header {
   transition: 0.2s;
 }
 .button {
+  -webkit-animation-name: glow;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+
   -moz-animation-name: glow;
   -moz-animation-duration: 2s;
   -moz-animation-iteration-count: infinite;
 
-  -webkit-animation-name: glow;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
+  -o-animation-name: glow;
+  -o-animation-duration: 2s;
+  -o-animation-iteration-count: infinite;
 
   animation-name: glow;
   animation-duration: 2s;
@@ -300,35 +304,35 @@ CSS3 ANIMATIONS
 /*Glow Effect*/
 @-moz-keyframes glow {
   0% {
-    box-shadow: 0 0 $glow-start-shadow;
+    -moz-box-shadow: 0 0 $glow-start-shadow $primary-color;
   }
   50% {
-    box-shadow: 0 0 $glow-end-shadow $primary-color;
+    -moz-box-shadow: 0 0 $glow-end-shadow $primary-color;
   }
   100% {
-    box-shadow: 0 0 $glow-start-shadow;
+    -moz-box-shadow: 0 0 $glow-start-shadow $primary-color;
   }
 }
 @-webkit-keyframes glow {
   0% {
-    box-shadow: 0 0 $glow-start-shadow;
+    box-shadow: 0 0 $glow-start-shadow $primary-color;
   }
   50% {
     box-shadow: 0 0 $glow-end-shadow $primary-color;
   }
   100% {
-    box-shadow: 0 0 $glow-start-shadow;
+    box-shadow: 0 0 $glow-start-shadow $primary-color;
   }
 }
 @keyframes glow {
   0% {
-    box-shadow: 0 0 $glow-start-shadow;
+    box-shadow: 0 0 $glow-start-shadow $primary-color;
   }
   50% {
     box-shadow: 0 0 $glow-end-shadow $primary-color;
   }
   100% {
-    box-shadow: 0 0 $glow-start-shadow;
+    box-shadow: 0 0 $glow-start-shadow $primary-color;
   }
 }
 
