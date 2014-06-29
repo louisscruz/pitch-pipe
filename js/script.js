@@ -66,7 +66,7 @@ $(function($) {
               $(this).css('-o-transform','rotate('+now+'deg)');
               $(this).css('transform','rotate('+now+'deg)');
             },
-            duration: 2000
+            duration: 1400
         },'swing');
         $(this)
     });
