@@ -1,137 +1,165 @@
 <!DOCTYPE html>
-<html ng-app="ngBoilerplate" ng-controller="AppCtrl">
-  <head>
-    <title ng-bind="pageTitle"></title>
+<html>
 
-    <!-- social media tags -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@joshdmiller">
-    <meta name="twitter:title" content="ngBoilerplate">
-    <meta name="twitter:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
-    <meta name="twitter:creator" content="@joshdmiller">
-    <meta name="twitter:image:src" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846">
-    <meta property="og:title" content="ngBoilerplate" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://bit.ly/ngBoilerplate" />
-    <meta property="og:image" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846" />
-    <meta property="og:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
+<head>
+  <title>The Pitch Pipe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+  <meta name="HandheldFriendly" content="true" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Oleo+Script:400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- google fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic' rel='stylesheet' type='text/css'>
+</head>
 
-    <!-- font awesome from BootstrapCDN -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<body>
 
-    <!-- compiled CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/ngbp-0.3.2.css" />
+  <div id="social">
 
-    <!-- compiled JavaScript -->
-    <script type="text/javascript" src="assets/ngbp-0.3.2.js"></script>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="ThePitchPipe">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-    <!-- it's stupid to have to load it here, but this is for the +1 button -->
-    <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
-      { "parsetags": "explicit" }
-    </script>
-  </head>
-  <body>
+  </div>
 
-      <div class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" ng-init="menuCollapsed = true"
-            ng-click="menuCollapsed = ! menuCollapsed">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="navbar-brand">
-            Louis Cruz
+  <div class="outer">
+    <div class="middle">
+      <div class="inner">
+
+        <header>
+          <b>the</b><br>Pitch<br>Pipe
+        </header>
+
+        <div id="pitch-pipe">
+
+          <div id="pitch-pipe-svg">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+              <defs>
+                <path id="circlePath" d=" M 150, 150 m -120, 0 a 120,120 0 0,1 240,0 a 120,120 0 0,1 -240,0 "/>
+                <path id="circlePath2" d=" M 150, 150 m -120, 0 a 120,120 0 0,1 240,0 a 120,120 0 0,1 -240,0 "/>
+              </defs>
+              <circle id="svg-circle" cx="150" cy="150" r="150"/>
+              <g transform="rotate(-5 150 150)">
+                <use xlink:href="#circlePath2" fill="none"/>
+                <text fill="#fff">
+                  <textPath xlink:href="#circlePath">A</textPath>
+                </text>
+              </g>
+              <g>
+                <use xlink:href="#circlePath" fill="none"/>
+                <text fill="#fff">
+                  <textPath xlink:href="#circlePath" startOffset="6%">B</textPath>
+                  <textPath xlink:href="#circlePath" startOffset="8%"class="flat">&#x266d;</textPath>
+                  <textPath xlink:href="#circlePath" startOffset="15%">B</textPath>
+                  <textPath xlink:href="#circlePath" startOffset="23.5%">C</textPath>
+                  <textPath xlink:href="#circlePath" startOffset="31%">C</textPath>
+                  <textPath xlink:href="#circlePath" startOffset="33.5%" class="sharp">&#x266f;</textPath>
+                  <textPath xlink:href="#circlePath" startOffset="40%">D</textPath>
+                  <textPath xlink:href="#circlePath" startOffset="47.6%">D</textPath>
+                  <textPath xlink:href="#circlePath" startOffset="50.5%" class="sharp">&#x266f;</textPath>
+                  <textPath xlink:href="#circlePath" startOffset="57%">E</textPath>
+                  <textPath xlink:href="#circlePath" startOffset="65.5%">F</textPath>
+                  <textPath xlink:href="#circlePath" startOffset="72.8%">F</textPath>
+                  <textPath xlink:href="#circlePath" startOffset="75%" class="sharp">&#x266f;</textPath>
+                  <textPath xlink:href="#circlePath" startOffset="82%">G</textPath>
+                  <textPath xlink:href="#circlePath" startOffset="89.5%">G</textPath>
+                  <textPath xlink:href="#circlePath" startOffset="92%" class="sharp">&#x266f;</textPath>
+                </text>
+              </g>
+            </svg>
           </div>
-        </div>
-        <div class="collapse navbar-collapse" collapse="menuCollapsed">
-          <ul class="nav navbar-nav">
-            <li ui-sref-active="active">
-              <a href ui-sref="home">
-                <i class="fa fa-home"></i>
-                Home
-              </a>
-            </li>
-            <li ui-sref-active="active">
-              <a href ui-sref="about">
-                <i class="fa fa-asterisk"></i>
-                About
-              </a>
-            </li>
-            <li ui-sref-active="active">
-              <a href ui-sref="examples">
-                <i class="fa fa-briefcase"></i>
-                Examples
-              </a>
-            </li>
-            <li ui-sref-active="active">
-              <a href ui-sref="contact">
-                <i class="fa fa-envelope"></i>
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
 
+          <div id="selector">
+            <input class="knob" data-displayPrevious=true data-linecap=round data-cursor=true data-width="100%" data-fgColor="#33AD5C" data-thickness=".2" data-max="12" style="visibility: hidden;" disabled>
+          </div>
 
-    <div ui-view="main"></div>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-inner">
-          <p>
-            &copy; 2014 cruz design</a>
-          </p>
-
-
+          <div id="output-circle" class="button">
+            <div id="output"></div>
+          </div>
 
         </div>
 
-        <div class="nh-anim">
-          <div class="wave">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+      </div> <!--End inner-->
+    </div> <!--End middle-->
+  </div> <!-- End outer-->
 
-          <div class="beaming">
-            <p class="top"></p>
-            <p class="middle"></p>
-            <p class="bottom"></p>
-          </div>
+  <footer>
+    <form class="pp" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="4U6EYD8FCW7KU">
+      <button name="submit"><img src="img/icon_pp.svg">Donate</button>
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+    <span class="copyright">Copyright &copy; 2014 Louis Cruz</span>
+    <span class="btc">
+        <a href="bitcoin:17NYDvYubFLgxM2DueQFWxUarB4r4JnspT">
+          Donate BTC<img src="img/icon_bitcoin.svg">
+        </a>
+        <span class="address"><code>17NYDvYubFLgxM2DueQFWxUarB4r4JnspT</code></span>
+      </span>
+  </footer>
 
-          <div class="stems">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+  <script src="js/min/jquery.knob.min.js"></script>
+  <script src="js/script.js"></script>
 
-      </div>
-    </footer>
-  </body>
-</html>
+  <audio id="A" preload="auto">
+      <source src="sounds/A.mp3"></source>
+      <source src="sounds/A.ogg"></source>
+  </audio>
+  <audio id="Bf" preload="auto">
+      <source src="sounds/Bf.mp3"></source>
+      <source src="sounds/Bf.ogg"></source>
+  </audio>
+  <audio id="B" preload="auto">
+      <source src="sounds/B.mp3"></source>
+      <source src="sounds/B.ogg"></source>
+  </audio>
+  <audio id="C" preload="auto">
+      <source src="sounds/C.mp3"></source>
+      <source src="sounds/C.ogg"></source>
+  </audio>
+  <audio id="Cs" preload="auto">
+      <source src="sounds/Cs.mp3"></source>
+      <source src="sounds/Cs.ogg"></source>
+  </audio>
+  <audio id="D" preload="auto">
+      <source src="sounds/D.mp3"></source>
+      <source src="sounds/D.ogg"></source>
+  </audio>
+  <audio id="Ds" preload="auto">
+      <source src="sounds/Ds.mp3"></source>
+      <source src="sounds/Ds.ogg"></source>
+  </audio>
+  <audio id="E" preload="auto">
+      <source src="sounds/E.mp3"></source>
+      <source src="sounds/E.ogg"></source>
+  </audio>
+  <audio id="F" preload="auto">
+      <source src="sounds/F.mp3"></source>
+      <source src="sounds/F.ogg"></source>
+  </audio>
+  <audio id="Fs" preload="auto">
+      <source src="sounds/Fs.mp3"></source>
+      <source src="sounds/Fs.ogg"></source>
+  </audio>
+  <audio id="G" preload="auto">
+      <source src="sounds/G.mp3"></source>
+      <source src="sounds/G.ogg"></source>
+  </audio>
+  <audio id="Gs" preload="auto">
+      <source src="sounds/Gs.mp3"></source>
+      <source src="sounds/Gs.ogg"></source>
+  </audio>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-52246754-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</body>
